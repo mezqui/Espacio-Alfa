@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <header class="encabezado">
+  <header class="encabezado">
       <a href="../index.html">
-        <img src="../imagenes/logo-espacio-alfa.png" alt="Logo pagina"></a>
+        <img src="../imagenes/logo-espacio-alfa.png" alt="Logo pagina" class="logoPagina"></a>
         <img src="../imagenes/pincelada2.png" alt="Logo Pagina Pincel" class="logoPincel">
     <nav>
         <ul class="encabezado__lista">
@@ -27,38 +27,33 @@
         <li class="encabezado__lista__item"> <a href="#"> Contacto </a></li>
       </ul>
     </nav> 
-    </header>
-  <h1>Contacto</h1>  
-
-
+  </header>
+  
   <main>
-    <h2 class="textoContacto">Deja tus datos y te contacto en breve!</h2>
-    
-    <form class="formulario">
-      <div>
-        <label for="nombre">Nombre y Apellido:</label>
-        <input type="text" required id="nombre">
-      </div>
-      <div>
-        <label for="email">Email:</label>
-        <input type="email" required id="email">
-      </div>
-      <div>
-        <label for="tel">Telefono:</label>
-        <input type="tel" required id="tel">
-      </div>
-      <div>
-        <label for="mensaje">Mensaje:</label>
-        <textarea name="comentarios" id="comentarios" cols="30" rows="10" ></textarea>
-      </div>
-      <div class="envio">
-        <input type="submit" value="Enviar" class="botonEnvio">
-      </div>
-    </form>
+      <h1>Contacto</h1>  
+      <h2 class="textoContacto">Dejá tus datos y te contacto en breve!</h2>
+        <form class="formulario">
+        <div class="nombreyapellido">
+          <label for="nombre">Nombre y Apellido:</label>
+          <input type="text" required id="nombre">
+        </div>
+        <div class="email">
+          <label for="email">Email:</label>
+          <input type="email" required id="email">
+        </div>
+        <div class="tel">
+          <label for="tel">Telefono:</label>
+          <input type="tel" required id="tel">
+        </div>
+        <div class="mensaje">
+          <label for="mensaje">Mensaje:</label>
+          <textarea name="comentarios" id="comentarios" cols="30" rows="10" ></textarea>
+        </div>
+        <div class="envio">
+          <input type="submit" value="Enviar" class="botonEnvio">
+        </div>
+        </form>
   </main>
-
-
-
 
   <footer>
     <ul class="footer__lista">
