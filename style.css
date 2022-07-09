@@ -27,7 +27,6 @@ h1 {
   width: 100%;
 }
 /* index */
-
 .encabezado {
   display: flex;
   flex-direction: row;
@@ -67,6 +66,7 @@ nav {
 
 nav a:hover {
   color: #8a9bff;
+  transition: all 1s;
 }
 
 .imagenPsp {
@@ -91,6 +91,9 @@ nav a:hover {
 
 /* footer */
 
+ul{
+  padding-left: 0;
+}
 footer {
   text-align: right;
   list-style: none;
@@ -108,14 +111,22 @@ footer {
 
 .footer__lista__item__icono {
   width: 50px;
+
 }
 
 .whatsapp {
   width: 50px;
   position: fixed;
-  bottom: 30px;
+  bottom: 43px;
   right: 5px;
 }
+/* Animacion */
+.footer__lista__item__icono {
+  transition: transform 3s linear;
+  animation-iteration-count: infinite;
+  transform: translateX(20px)
+}
+
 
 /* servicios */
 
@@ -198,6 +209,8 @@ form div {
 .botonEnvio:hover {
   color: #f094ff;
   background-color: #1f2721;
+  transform: scale(1.2);
+  transition: all 2s;
 }
 
 .formulario input,
@@ -334,3 +347,9 @@ form div {
     margin: 0;
   }
 }
+
+/* @keyframes animacion{
+  
+
+  }
+} */
