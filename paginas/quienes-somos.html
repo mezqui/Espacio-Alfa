@@ -7,6 +7,8 @@
     <title>Espacio Alfa | Quienes Somos</title>
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- animacion -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +22,7 @@
       <a href="../index.html">
         <img src="../imagenes/logo-espacio-alfa.png" alt="Logo pagina" class="logoPagina"></a>
         <img src="../imagenes/pincelada2.png" alt="Logo Pagina Pincel" class="logoPincel">
+        <img src="../imagenes/pincel3.png" alt="Pincel con movimiento" class="pincelMov">
       <nav>
         <ul class="encabezado__lista">
           <li class="encabezado__lista__item"> <a href="../index.html"> Inicio</a></li>
@@ -35,11 +38,11 @@
 
   <Main>
     <section class="sectionQuienes">
-      <div class="imagenesCintia">
+      <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="imagenesCintia">
         <img src="../imagenes/cintia.png" alt="foto Cintia" class="fotoCintia">
         <img src="../imagenes/cintia2.png" alt="foto Cintia" class="fotoCintia2">
       </div>
-      <div class="textoQuienes">
+      <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="textoQuienes">
           <p>Mi nombre es Cintia Torres, tengo 28 años, soy de Miramar y soy Psicopedagoga. Inicié a estudiar en el año 2011, momento en dónde comenzó este gran amor por lo que hago. Cada día de estudio y esfuerzo valía la alegría ( y no la pena ) porque mis objetivos eran claros : acompañar y fortalecer a los niños que estuvieran atravesando situaciones complejas.</p>
           <p> Luego de 4 años de estudio, comencé a trabajar en una escuela que quedaba a unos cuantos kilómetros de casa. Valía cada segundo en el colectivo porque al llegar esas caritas sinceras, llenas de ilusión, ternura y sueños estarían esperándome. Mi primer trabajo como psicopedagoga en el rol de Orientadora Educacional. Una hermosa experiencia en dónde aprendí muchísimo, más allá de los libros.</p>
           <p>Al final de esa etapa, se abrió otra en dónde comencé a explorar y conocer el rol de la orientadora de aprendizajes en otra institución educativa que si bien quedaba dentro de mi ciudad, estaba ubicada en un lugar categorizado como desfavorable.</p>
@@ -59,6 +62,10 @@
       <li class="footer__lista__item"><a href="https://api.whatsapp.com/send/?phone=%2B5492213140063&text&app_absent=0" target="_blank"> <img src="../imagenes/whatsapp-icono.png" alt="icono whatsapp" class="whatsapp"> </a></li>
     </ul>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
 </body>
 
 </html>

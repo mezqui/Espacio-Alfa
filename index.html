@@ -7,6 +7,8 @@
     <title>Espacio Alfa | Inicio</title>
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- animacion -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +21,8 @@
 <body>
   <header class="encabezado">
         <a href="./index.html"><img src="./imagenes/logo-espacio-alfa.png" alt="Logo pagina" class="logoPagina"></a>
-        <img src="./imagenes/pincelada3.png" alt="Logo Pagina Pincel" class="logoPincel">
+        <img src="./imagenes/pincelada2.png" alt="Logo Pagina Pincel" class="logoPincel">
+        <img src="../imagenes/pincel3.png" alt="Pincel con movimiento" class="pincelMov">
       <nav>
           <ul class="encabezado__lista">
               <li class="encabezado__lista__item"><a href="#">Inicio</a></li>
@@ -34,8 +37,8 @@
   <main class="principalIndex">
     <h1 class="textoBienvenidos">Bienvenidos a Espacio Alfa</h1>
       <section class="sectionIndex">
-        <img src="./imagenes/que-hace-un-psicopedagogo.png" alt="Imagen que hace un psicopedagogo" class="imagenPsp">
-        <div class="textoIndex">
+        <img data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" src="./imagenes/que-hace-un-psicopedagogo.png" alt="Imagen que hace un psicopedagogo" class="imagenPsp">
+        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="textoIndex">
             <p>A diario los que trabajamos en esta profesión nos encontramos con éste interrogatorio "¿ Sos Psico qué ?". Por ello, resulta necesario iniciar despejando algunas dudas</p>
             <p>Algunas de las funciones que ejercemos:</p>
            <ul>
@@ -63,6 +66,10 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
 </body>
 
 </html>

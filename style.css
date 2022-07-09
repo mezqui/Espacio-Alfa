@@ -122,11 +122,42 @@ footer {
 }
 /* Animacion */
 .footer__lista__item__icono {
-  transition: transform 3s linear;
-  animation-iteration-count: infinite;
-  transform: translateX(20px)
+  animation: iconos 3s  linear infinite;
 }
-
+@keyframes iconos{
+  0%{
+    transform: translateY(0);}
+  25%{
+    transform: translateY(10px);
+  }
+  50%{
+    transform: translateY(0);
+  }
+  75%{
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+.pincelMov{
+  width: 25%;
+  position: absolute;
+  top: 5%;
+  right: -4em;
+  animation: pincel 4s linear infinite;
+}
+@keyframes pincel{
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(30px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
 
 /* servicios */
 
@@ -260,6 +291,9 @@ form div {
     display: none;
   }
 
+  .pincelMov{
+    display: none;
+  }
   .footer__lista__item {
     margin: 2vw;
   }
