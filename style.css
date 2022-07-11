@@ -38,6 +38,17 @@ h1 {
 .logoPincel {
   width: 55%;
 }
+.navbar {
+  width: 100%;
+  font-family: "Cookie", cursive;
+  font-weight: bolder;
+}
+.navbar-brand {
+  font-size: 42px;
+}
+.nav-link {
+  font-size: 22px;
+}
 
 .encabezado__lista__item {
   display: inline-block;
@@ -91,7 +102,7 @@ nav a:hover {
 
 /* footer */
 
-ul{
+ul {
   padding-left: 0;
 }
 footer {
@@ -111,7 +122,6 @@ footer {
 
 .footer__lista__item__icono {
   width: 50px;
-
 }
 
 .whatsapp {
@@ -122,39 +132,40 @@ footer {
 }
 /* Animacion */
 .footer__lista__item__icono {
-  animation: iconos 3s  linear infinite;
+  animation: iconos 3s linear infinite;
 }
-@keyframes iconos{
-  0%{
-    transform: translateY(0);}
-  25%{
+@keyframes iconos {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
     transform: translateY(10px);
   }
-  50%{
+  50% {
     transform: translateY(0);
   }
-  75%{
+  75% {
     transform: translateY(-10px);
   }
-  100%{
+  100% {
     transform: translateY(0);
   }
 }
-.pincelMov{
+.pincelMov {
   width: 25%;
   position: absolute;
   top: 5%;
   right: -4em;
   animation: pincel 4s linear infinite;
 }
-@keyframes pincel{
-  0%{
+@keyframes pincel {
+  0% {
     transform: translateX(0);
   }
-  50%{
+  50% {
     transform: translateX(30px);
   }
-  100%{
+  100% {
     transform: translateX(0);
   }
 }
@@ -180,6 +191,9 @@ footer {
   width: 60%;
   height: 33vw;
 }
+#carouselExampleControls {
+  width: 80%;
+}
 
 /* contacto */
 
@@ -190,7 +204,8 @@ footer {
   width: 70%;
   border-style: solid;
   border-width: 3px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
   font-size: 20px;
   box-shadow: 0 0 20px 0 #8a9bff;
   display: grid;
@@ -290,8 +305,10 @@ form div {
   .logoPincel {
     display: none;
   }
-
-  .pincelMov{
+  nav .encabezado__lista {
+    display: none;
+  }
+  .pincelMov {
     display: none;
   }
   .footer__lista__item {
@@ -303,7 +320,9 @@ form div {
     align-items: center;
     margin: 0;
   }
-
+  .tituloPagina {
+    display: none;
+  }
   .encabezado {
     flex-direction: column;
     align-items: center;
@@ -322,6 +341,8 @@ form div {
   .sectionIndex {
     flex-direction: column;
     margin: 20px;
+    transition: none;
+    transform: none;
   }
   .encabezado__lista {
     position: relative;
@@ -380,10 +401,15 @@ form div {
     height: 300px;
     margin: 0;
   }
+  @keyframes iconos {
+    0% {
+      transform: none;
+    }
+  }
+}
+@media screen and (min-width: 769px) {
+  .navbar {
+    display: none;
+  }
 }
 
-/* @keyframes animacion{
-  
-
-  }
-} */
