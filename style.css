@@ -198,9 +198,6 @@ footer {
 .card-img-top{
   border-radius: 8px;
 }
-.card-img-top:hover{
-  transform: scale(1.1);
-}
 
 /* ubicacion */
 
@@ -339,7 +336,7 @@ form div {
   .container-fluid{
     flex-direction: row-reverse;
   }
-
+  
   .imagenPsp {
     width: 90%;
     align-items: center;
@@ -426,6 +423,12 @@ form div {
     height: 300px;
     margin: 0;
   }
+  .col{
+    width: 90%;
+  }
+  .row{
+    justify-content: center;
+  }
   @keyframes iconos {
     0% {
       transform: none;
@@ -435,6 +438,9 @@ form div {
 @media screen and (min-width: 769px) {
   .navbar {
     display: none;
+  }
+  .card-img-top:hover{
+    transform: scale(1.1);
   }
 }
 
