@@ -180,22 +180,22 @@ footer {
 .clickAqui {
   font-size: 30px;
 }
-.card-text{
+.card-text {
   text-align: justify;
   font-family: "Indie Flower", cursive;
   font-size: 18px;
 }
-.card-title{
+.card-title {
   text-align: center;
   margin: 10px;
   font-weight: bold;
   border-bottom: solid #f094ff;
 }
-.mainGaleria{
+.mainGaleria {
   margin-bottom: 30px;
   margin-top: 10px;
 }
-.card-img-top{
+.card-img-top {
   border-radius: 8px;
 }
 
@@ -333,10 +333,10 @@ form div {
   .footer__lista__item {
     margin: 2vw;
   }
-  .container-fluid{
+  .container-fluid {
     flex-direction: row-reverse;
   }
-  
+
   .imagenPsp {
     width: 90%;
     align-items: center;
@@ -423,10 +423,10 @@ form div {
     height: 300px;
     margin: 0;
   }
-  .col{
+  .col {
     width: 90%;
   }
-  .row{
+  .row {
     justify-content: center;
   }
   @keyframes iconos {
@@ -439,8 +439,7 @@ form div {
   .navbar {
     display: none;
   }
-  .card-img-top:hover{
+  .card-img-top:hover {
     transform: scale(1.1);
   }
 }
-
