@@ -50,9 +50,12 @@ h1 {
   font-size: 22px;
   justify-content: center;
 }
-.video {
-  width: 100%;
+.video{
   text-align: center;
+}
+.video iframe {
+  width: 560px;
+  height: 315px;
   padding: 10px;
 }
 .encabezado__lista__item {
@@ -160,7 +163,7 @@ footer {
   width: 25%;
   position: absolute;
   top: 5%;
-  right: -4em;
+  right: 30em;
   animation: pincel 4s linear infinite;
 }
 @keyframes pincel {
@@ -168,7 +171,7 @@ footer {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(30px);
+    transform: translateX(120%);
   }
   100% {
     transform: translateX(0);
@@ -177,6 +180,9 @@ footer {
 
 /* galeria */
 
+.row{
+  margin: 0%;
+}
 .clickAqui {
   font-size: 30px;
 }
@@ -192,6 +198,7 @@ footer {
   border-bottom: solid #f094ff;
 }
 .mainGaleria {
+  margin: 0px;
   margin-bottom: 30px;
   margin-top: 10px;
 }
@@ -336,7 +343,6 @@ form div {
   .container-fluid {
     flex-direction: row-reverse;
   }
-
   .imagenPsp {
     width: 90%;
     align-items: center;
@@ -353,6 +359,9 @@ form div {
   }
   .encabezado a {
     display: flex;
+  }
+  .video iframe{
+    width: 100%;
   }
 
   .whatsapp {
@@ -429,6 +438,7 @@ form div {
   .row {
     justify-content: center;
   }
+
   @keyframes iconos {
     0% {
       transform: none;
@@ -440,6 +450,6 @@ form div {
     display: none;
   }
   .card-img-top:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }
