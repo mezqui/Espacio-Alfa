@@ -50,7 +50,7 @@ h1 {
   font-size: 22px;
   justify-content: center;
 }
-.video{
+.video {
   text-align: center;
 }
 .video iframe {
@@ -89,8 +89,7 @@ nav a:hover {
 }
 
 .imagenPsp {
-  width: 50%;
-  height: 50%;
+  width: 40vw;
   margin: 30px;
   padding: 25px;
 }
@@ -120,6 +119,7 @@ footer {
 }
 .footer__lista {
   width: 100%;
+  margin-bottom: 0;
 }
 
 .footer__lista__item {
@@ -135,7 +135,7 @@ footer {
 .whatsapp {
   width: 50px;
   position: fixed;
-  bottom: 43px;
+  bottom: 25px;
   right: 5px;
 }
 /* Animacion */
@@ -180,7 +180,7 @@ footer {
 
 /* galeria */
 
-.row{
+.row {
   margin: 0%;
 }
 .clickAqui {
@@ -213,8 +213,10 @@ footer {
   text-align: -webkit-center;
 }
 .ubicacion__mapa {
-  width: 60%;
+  width: 60vw;
   height: 33vw;
+}
+.ubicacion__div{
   text-align: center;
 }
 #carouselExampleControls {
@@ -282,7 +284,7 @@ form div {
   color: #f094ff;
   background-color: #1f2721;
   transform: scale(1.2);
-  transition: all 2s;
+  transition: all 1s;
 }
 
 .formulario input,
@@ -313,16 +315,15 @@ form div {
   flex-direction: row;
   align-items: center;
 }
-
-.fotoCintia {
-  margin: 15px;
-  height: 400px;
-  width: 400px;
+.imagenesCintia{
+  width: 100%;
 }
+
+.fotoCintia,
 .fotoCintia2 {
   margin: 15px;
-  height: 400px;
-  width: 400px;
+  height: 80vh;
+  width: 80vh;
 }
 
 /* media query */
@@ -343,6 +344,7 @@ form div {
   .container-fluid {
     flex-direction: row-reverse;
   }
+
   .imagenPsp {
     width: 90%;
     align-items: center;
@@ -360,8 +362,16 @@ form div {
   .encabezado a {
     display: flex;
   }
-  .video iframe{
+  .video iframe {
     width: 100%;
+  }
+  .fotoCintia,
+  .fotoCintia2 {
+    margin: 5px;
+  }
+  .textoQuienes {
+    margin: 0;
+    padding: 10px;
   }
 
   .whatsapp {
@@ -371,7 +381,7 @@ form div {
   }
   .sectionIndex {
     flex-direction: column;
-    margin: 20px;
+    margin: 10px;
     transition: none;
     transform: none;
   }
@@ -380,11 +390,13 @@ form div {
     left: 0px;
     background-color: #f094ff;
   }
-
+  main {
+    text-align: -webkit-center;
+  }
   .sectionQuienes {
     flex-direction: column-reverse;
-    margin: 15px;
-    text-align: center;
+    margin: 10px;
+    width: 90%;
   }
   #carouselExampleControls {
     width: 90%;
@@ -410,6 +422,9 @@ form div {
     flex-direction: column;
     align-items: center;
   }
+  .footer__lista__item__icono {
+    animation: none
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -423,14 +438,17 @@ form div {
   .logoPagina {
     width: 95%;
   }
+  .footer__lista{
+    text-align: center;
+  }
   .encabezado a {
     justify-content: center;
   }
   .fotoCintia,
   .fotoCintia2 {
-    width: 300px;
-    height: 300px;
-    margin: 0;
+    margin: 5px;
+    width: 70vh;
+    height: 70vh;
   }
   .col {
     width: 90%;
