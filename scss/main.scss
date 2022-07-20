@@ -1,493 +1,492 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.texto {
+  font-family: "Indie Flower", cursive;
+  font-weight: 600;
+  font-size: 21px;
+  padding: 20px;
+  text-align: justify;
+  margin: 10px;
+}
+
+h1 {
+  color: #1f2721;
+  background-color: #f094ff;
+  border: solid 5px #8a9bff;
+  padding: 15px;
+  width: fit-content;
+  font-family: "Gentium Plus", serif;
+  border-radius: 20px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.logoPagina {
+  width: 100%;
+}
+/* index */
+.encabezado {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.logoPincel {
+  width: 55%;
+}
+.navbar {
+  width: 100%;
+  font-family: "Cookie", cursive;
+  font-weight: bolder;
+}
+.navbar-brand {
+  font-size: 42px;
+}
+.nav-link {
+  font-size: 22px;
+  justify-content: center;
+}
+.video {
+  text-align: center;
+}
+.video iframe {
+  width: 560px;
+  height: 315px;
+  padding: 10px;
+}
+.encabezado__lista__item {
+  display: inline-block;
+  margin: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Cookie", cursive;
+}
+
+.encabezado__lista {
+  width: fit-content;
+  margin: 0 auto;
+  position: absolute;
+  left: 45%;
+  text-align: right;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1f2721;
+  font-size: 3vw;
+}
+nav {
+  align-self: center;
+}
+
+nav a:hover {
+  color: #8a9bff;
+  transition: all 1s;
+}
+
+.imagenPsp {
+  width: 40vw;
+  margin: 30px;
+  padding: 25px;
+}
+.sectionIndex {
+  align-items: center;
+  margin: 10px;
+  flex-direction: row;
+  display: flex;
+}
+
+.textoIndex {
+  font-family: "Indie Flower", cursive;
+  font-weight: 600;
+  font-size: 21px;
+  text-align: justify;
+  margin: 20px;
+}
+
+/* footer */
+
+ul {
+  padding-left: 0;
+}
+footer {
+  text-align: right;
+  list-style: none;
+  background-color: #f094ff;
+}
+.footer__lista {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.footer__lista__item {
+  display: inline-block;
+  margin: 25px;
+  margin-right: 3rem;
+}
+
+.footer__lista__item__icono {
+  width: 50px;
+}
+
+.whatsapp {
+  width: 50px;
+  position: fixed;
+  bottom: 25px;
+  right: 5px;
+}
+/* Animacion */
+.footer__lista__item__icono {
+  animation: iconos 3s linear infinite;
+}
+@keyframes iconos {
+  0% {
+    transform: translateY(0);
   }
-  
-  .texto {
-    font-family: "Indie Flower", cursive;
-    font-weight: 600;
-    font-size: 21px;
-    padding: 20px;
-    text-align: justify;
-    margin: 10px;
+  25% {
+    transform: translateY(10px);
   }
-  
-  h1 {
-    color: #1f2721;
-    background-color: #f094ff;
-    border: solid 5px #8a9bff;
-    padding: 15px;
-    width: fit-content;
-    font-family: "Gentium Plus", serif;
-    border-radius: 20px;
-    margin: 20px auto;
-    text-align: center;
+  50% {
+    transform: translateY(0);
   }
-  
-  .logoPagina {
-    width: 100%;
+  75% {
+    transform: translateY(-10px);
   }
-  /* index */
-  .encabezado {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-top: 5px;
-    padding: 10px;
+  100% {
+    transform: translateY(0);
   }
-  
+}
+.pincelMov {
+  width: 25%;
+  position: absolute;
+  top: 5%;
+  right: 40%;
+  animation: pincel 6s linear;
+  opacity: 0;
+}
+@keyframes pincel {
+  4% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(30vw);
+  }
+  52% {
+    transform: translateX(30vw);
+  }
+  95% {
+    transform: translateX(0);
+  }
+  96% {
+    opacity: 1;
+  }
+}
+
+/* galeria */
+
+.row {
+  margin: 0%;
+}
+.clickAqui {
+  font-size: 30px;
+}
+.card-text {
+  text-align: justify;
+  font-family: "Indie Flower", cursive;
+  font-weight: 600;
+  font-size: 18px;
+}
+.card-title {
+  text-align: center;
+  margin: 10px;
+  font-weight: bold;
+  border-bottom: solid #f094ff;
+}
+.mainGaleria {
+  margin: 0px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.card-img-top {
+  border-radius: 8px;
+}
+
+/* ubicacion */
+
+.ubicacion {
+  margin: 20px;
+  text-align: -webkit-center;
+}
+.ubicacion__mapa {
+  width: 60vw;
+  height: 33vw;
+}
+.ubicacion__div {
+  text-align: center;
+}
+#carouselExampleControls {
+  width: 80%;
+}
+.btn {
+  margin: 8px;
+  padding: 5px;
+  font-family: "Gentium Plus", serif;
+  font-size: 25px;
+  font-weight: bolder;
+  background-color: #8a9bff;
+  border-color: #8a9bff;
+}
+
+/* contacto */
+
+.formulario {
+  background-color: #8a9bff;
+  align-content: center;
+  margin: 20px;
+  width: 70%;
+  border-style: solid;
+  border-width: 3px;
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 0 0 20px 0 #8a9bff;
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+}
+.mainFormulario {
+  text-align: -webkit-center;
+}
+
+.formulario .mensaje,
+.formulario .nombreyapellido {
+  grid-column: 1 / 5;
+}
+.formulario .email {
+  grid-column: 1 / 3;
+}
+.formulario .tel {
+  grid-column: 3 / 5;
+}
+.formulario .envio {
+  grid-column-start: 4;
+}
+
+.textoContacto {
+  text-align: center;
+  background-color: #f094ff;
+  border: #1f2721;
+  width: fit-content;
+  margin: 35px;
+}
+
+form div {
+  margin: 5px;
+  padding: 20px 30px 10px 20px;
+  text-align: center;
+}
+
+.envio {
+  margin: 2px;
+  align-self: end;
+}
+.botonEnvio {
+  background-color: #f094ff;
+  margin: 5px;
+  padding: 15px;
+  border: solid 6px #1f2721;
+  border-radius: 100%;
+  font-weight: 700;
+}
+.botonEnvio:hover {
+  color: #f094ff;
+  background-color: #1f2721;
+  transform: scale(1.2);
+  transition: all 1s;
+}
+
+.formulario input,
+.formulario label,
+.formulario textarea {
+  width: 100%;
+  padding: 0.7em;
+}
+
+/* quienes somos< */
+
+.espacioalfa {
+  font-family: "Cookie", cursive;
+  font-weight: bold;
+  border-bottom: solid;
+  font-size: 31px;
+}
+
+.textoQuienes {
+  font-family: "Indie Flower", cursive;
+  font-weight: 600;
+  font-size: 21px;
+  padding: 20px;
+  text-align: justify;
+}
+
+.sectionQuienes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.imagenesCintia {
+  width: 100%;
+}
+
+.fotoCintia2 {
+  margin: 15px;
+  width: 90%;
+}
+
+/* media query */
+
+@media screen and (max-width: 768px) {
   .logoPincel {
-    width: 55%;
+    display: none;
   }
-  .navbar {
-    width: 100%;
-    font-family: "Cookie", cursive;
-    font-weight: bolder;
-  }
-  .navbar-brand {
-    font-size: 42px;
-  }
-  .nav-link {
-    font-size: 22px;
-    justify-content: center;
-  }
-  .video {
-    text-align: center;
-  }
-  .video iframe {
-    width: 560px;
-    height: 315px;
-    padding: 10px;
-  }
-  .encabezado__lista__item {
-    display: inline-block;
-    margin: 10px;
-    font-size: 40px;
-    font-weight: bolder;
-    font-family: "Cookie", cursive;
-  }
-  
-  .encabezado__lista {
-    width: fit-content;
-    margin: 0 auto;
-    position: absolute;
-    left: 45%;
-    text-align: right;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #1f2721;
-    font-size: 3vw;
-  }
-  nav {
-    align-self: center;
-  }
-  
-  nav a:hover {
-    color: #8a9bff;
-    transition: all 1s;
-  }
-  
-  .imagenPsp {
-    width: 40vw;
-    margin: 30px;
-    padding: 25px;
-  }
-  .sectionIndex {
-    align-items: center;
-    margin: 10px;
-    flex-direction: row;
-    display: flex;
-  }
-  
-  .textoIndex {
-    font-family: "Indie Flower", cursive;
-    font-weight: 600;
-    font-size: 21px;
-    text-align: justify;
-    margin: 20px;
-  }
-  
-  /* footer */
-  
-  ul {
-    padding-left: 0;
-  }
-  footer {
-    text-align: right;
-    list-style: none;
-    background-color: #f094ff;
-  }
-  .footer__lista {
-    width: 100%;
-    margin-bottom: 0;
-  }
-  
-  .footer__lista__item {
-    display: inline-block;
-    margin: 25px;
-    margin-right: 3rem;
-  }
-  
-  .footer__lista__item__icono {
-    width: 50px;
-  }
-  
-  .whatsapp {
-    width: 50px;
-    position: fixed;
-    bottom: 25px;
-    right: 5px;
-  }
-  /* Animacion */
-  .footer__lista__item__icono {
-    animation: iconos 3s linear infinite;
-  }
-  @keyframes iconos {
-    0% {
-      transform: translateY(0);
-    }
-    25% {
-      transform: translateY(10px);
-    }
-    50% {
-      transform: translateY(0);
-    }
-    75% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
+  nav .encabezado__lista {
+    display: none;
   }
   .pincelMov {
-    width: 25%;
-    position: absolute;
-    top: 5%;
-    right: 40%;
-    animation: pincel 6s linear;
-    opacity: 0;
+    display: none;
   }
-  @keyframes pincel {
-    4%{
-      opacity: 1;
-    }
-    50% {
-      transform: translateX(30vw);
-    }
-    52%{
-      transform: translateX(30vw);
-    }
-    95% {
-      transform: translateX(0);
-    }
-    96%{
-      opacity: 1;
-    }
+  .footer__lista__item {
+    margin: 2vw;
   }
-  
-  /* galeria */
-  
-  .row {
-    margin: 0%;
+  .container-fluid {
+    flex-direction: row-reverse;
   }
-  .clickAqui {
-    font-size: 30px;
-  }
-  .card-text {
-    text-align: justify;
-    font-family: "Indie Flower", cursive;
-    font-weight: 600;
-    font-size: 18px;
-  }
-  .card-title {
-    text-align: center;
-    margin: 10px;
-    font-weight: bold;
-    border-bottom: solid #f094ff;
-  }
-  .mainGaleria {
-    margin: 0px;
-    margin-bottom: 30px;
-    margin-top: 10px;
-  }
-  .card-img-top {
-    border-radius: 8px;
-  }
-  
-  /* ubicacion */
-  
-  .ubicacion {
-    margin: 20px;
-    text-align: -webkit-center;
-  }
-  .ubicacion__mapa {
-    width: 60vw;
-    height: 33vw;
-  }
-  .ubicacion__div{
-    text-align: center;
-  }
-  #carouselExampleControls {
-    width: 80%;
-  }
-  .btn{
-    margin: 8px;
-    padding: 5px;
-    font-family: "Gentium Plus", serif;
-    font-size: 25px;
-    font-weight: bolder;
-    background-color: #8a9bff;
-    border-color: #8a9bff;
-  }
-  
-  /* contacto */
-  
-  .formulario {
-    background-color: #8a9bff;
-    align-content: center;
-    margin: 20px;
-    width: 70%;
-    border-style: solid;
-    border-width: 3px;
-    font-family: "Indie Flower", cursive;
-    font-weight: bold;
-    font-size: 20px;
-    box-shadow: 0 0 20px 0 #8a9bff;
-    display: grid;
-    grid-template-columns: repeat(4, 3fr);
-  }
-  .mainFormulario{
-    text-align: -webkit-center;
-  }
-  
-  .formulario .mensaje,
-  .formulario .nombreyapellido {
-    grid-column: 1 / 5;
-  }
-  .formulario .email {
-    grid-column: 1 / 3;
-  }
-  .formulario .tel {
-    grid-column: 3 / 5;
-  }
-  .formulario .envio {
-    grid-column-start: 4;
-  }
-  
-  .textoContacto {
-    text-align: center;
-    background-color: #f094ff;
-    border: #1f2721;
-    width: fit-content;
-    margin: 35px;
-  }
-  
-  form div {
-    margin: 5px;
-    padding: 20px 30px 10px 20px;
-    text-align: center;
-  }
-  
-  .envio {
-    margin: 2px;
-    align-self: end;
-  }
-  .botonEnvio {
-    background-color: #f094ff;
-    margin: 5px;
-    padding: 15px;
-    border: solid 6px #1f2721;
-    border-radius: 100%;
-    font-weight: 700;
-  }
-  .botonEnvio:hover {
-    color: #f094ff;
-    background-color: #1f2721;
-    transform: scale(1.2);
-    transition: all 1s;
-  }
-  
-  .formulario input,
-  .formulario label,
-  .formulario textarea {
-    width: 100%;
-    padding: 0.7em;
-  }
-  
-  /* quienes somos< */
-  
-  .espacioalfa {
-    font-family: "Cookie", cursive;
-    font-weight: bold;
-    border-bottom: solid;
-    font-size: 31px;
-  }
-  
-  .textoQuienes {
-    font-family: "Indie Flower", cursive;
-    font-weight: 600;
-    font-size: 21px;
-    padding: 20px;
-    text-align: justify;
-  }
-  
-  .sectionQuienes {
-    display: flex;
-    flex-direction: row;
+
+  .imagenPsp {
+    width: 90%;
     align-items: center;
+    margin: 0;
   }
-  .imagenesCintia{
+  .tituloPagina {
+    display: none;
+  }
+  .encabezado {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .encabezado a {
+    display: flex;
+  }
+  .video iframe {
     width: 100%;
   }
-  
   .fotoCintia2 {
-    margin: 15px;
+    margin: 5px;
+    width: 50%;
+  }
+  .textoQuienes {
+    margin: 0;
+    width: 100%;
+  }
+
+  .whatsapp {
+    position: relative;
+    right: 0;
+    bottom: 0;
+  }
+  .sectionIndex {
+    flex-direction: column;
+    margin: 10px;
+    transition: none;
+    transform: none;
+  }
+  .encabezado__lista {
+    position: relative;
+    left: 0px;
+    background-color: #f094ff;
+  }
+  main {
+    text-align: -webkit-center;
+  }
+  .sectionQuienes {
+    flex-direction: column-reverse;
+    margin: 10px;
     width: 90%;
   }
-  
-  /* media query */
-  
-  @media screen and (max-width: 768px) {
-    .logoPincel {
-      display: none;
-    }
-    nav .encabezado__lista {
-      display: none;
-    }
-    .pincelMov {
-      display: none;
-    }
-    .footer__lista__item {
-      margin: 2vw;
-    }
-    .container-fluid {
-      flex-direction: row-reverse;
-    }
-  
-    .imagenPsp {
-      width: 90%;
-      align-items: center;
-      margin: 0;
-    }
-    .tituloPagina {
-      display: none;
-    }
-    .encabezado {
-      flex-direction: column;
-      align-items: center;
-      margin: 0 auto;
-      padding: 0;
-    }
-    .encabezado a {
-      display: flex;
-    }
-    .video iframe {
-      width: 100%;
-    }
-    .fotoCintia2 {
-      margin: 5px;
-      width: 50%;
-    }
-    .textoQuienes {
-      margin: 0;
-      width: 100%;
-    }
-  
-    .whatsapp {
-      position: relative;
-      right: 0;
-      bottom: 0;
-    }
-    .sectionIndex {
-      flex-direction: column;
-      margin: 10px;
-      transition: none;
+  #carouselExampleControls {
+    width: 90%;
+  }
+  nav a {
+    font-size: 4.7vw;
+  }
+  .formulario {
+    grid-template-columns: 1fr 1fr;
+    width: inherit;
+  }
+  .formulario .nombreyapellido,
+  .formulario .email,
+  .formulario .tel {
+    grid-column: 1 / 4;
+  }
+  .formulario .envio {
+    grid-column: 1 / 3;
+  }
+
+  .mainGaleria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__lista__item__icono {
+    animation: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  nav a {
+    font-size: 4vw;
+  }
+  h1 {
+    padding: 5px;
+    width: 80%;
+  }
+  .logoPagina {
+    width: 95%;
+  }
+  .footer__lista {
+    text-align: center;
+  }
+  .encabezado a {
+    justify-content: center;
+  }
+  .fotoCintia2 {
+    margin: 5px;
+    width: 80%;
+  }
+  .col {
+    width: 90%;
+  }
+  .row {
+    justify-content: center;
+  }
+
+  @keyframes iconos {
+    0% {
       transform: none;
     }
-    .encabezado__lista {
-      position: relative;
-      left: 0px;
-      background-color: #f094ff;
-    }
-    main {
-      text-align: -webkit-center;
-    }
-    .sectionQuienes {
-      flex-direction: column-reverse;
-      margin: 10px;
-      width: 90%;
-    }
-    #carouselExampleControls {
-      width: 90%;
-    }
-    nav a {
-      font-size: 4.7vw;
-    }
-    .formulario {
-      grid-template-columns: 1fr 1fr;
-      width: inherit;
-    }
-    .formulario .nombreyapellido,
-    .formulario .email,
-    .formulario .tel {
-      grid-column: 1 / 4;
-    }
-    .formulario .envio {
-      grid-column: 1 / 3;
-    }
-  
-    .mainGaleria {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .footer__lista__item__icono {
-      animation: none
-    }
   }
-  
-  @media screen and (max-width: 425px) {
-    nav a {
-      font-size: 4vw;
-    }
-    h1 {
-      padding: 5px;
-      width: 80%;
-    }
-    .logoPagina {
-      width: 95%;
-    }
-    .footer__lista{
-      text-align: center;
-    }
-    .encabezado a {
-      justify-content: center;
-    }
-    .fotoCintia2 {
-      margin: 5px;
-      width: 80%;
-    }
-    .col {
-      width: 90%;
-    }
-    .row {
-      justify-content: center;
-    }
-  
-    @keyframes iconos {
-      0% {
-        transform: none;
-      }
-    }
+}
+@media screen and (min-width: 769px) {
+  .navbar {
+    display: none;
   }
-  @media screen and (min-width: 769px) {
-    .navbar {
-      display: none;
-    }
-    .card-img-top:hover {
-      transform: scale(1.05);
-    }
+  .card-img-top:hover {
+    transform: scale(1.05);
   }
-  
+}
