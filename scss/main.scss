@@ -1,11 +1,10 @@
-@import "general";
+@import "./general";
 @import "./base/variables";
-@import './contacto';
-@import './galeria';
 @import './inicio';
 @import './quienes-somos';
+@import './galeria';
 @import './ubicacion';
-
+@import './contacto';
 
 .texto {
   font-family: "Indie Flower", cursive;
@@ -81,8 +80,6 @@ nav {
     transition: all 1s;
   }
 }
-/* footer */
-
 ul {
   padding-left: 0;
 }
