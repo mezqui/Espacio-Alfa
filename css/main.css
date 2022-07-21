@@ -286,6 +286,17 @@ ul {
 @media screen and (max-width: 768px) {
   .logoPincel {
     display: none; }
+  .encabezado {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0; }
+    .encabezado__lista {
+      position: relative;
+      left: 0px;
+      background-color: #f094ff; }
+    .encabezado a {
+      display: flex; }
   nav .encabezado__lista {
     display: none; }
   .pincelMov {
@@ -300,13 +311,6 @@ ul {
     margin: 0; }
   .tituloPagina {
     display: none; }
-  .encabezado {
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    padding: 0; }
-  .encabezado a {
-    display: flex; }
   .video iframe {
     width: 100%; }
   .fotoCintia2 {
@@ -320,10 +324,6 @@ ul {
     margin: 10px;
     transition: none;
     transform: none; }
-  .encabezado__lista {
-    position: relative;
-    left: 0px;
-    background-color: #f094ff; }
   main {
     text-align: -webkit-center; }
   .sectionQuienes {
@@ -337,12 +337,14 @@ ul {
   .formulario {
     grid-template-columns: 1fr 1fr;
     width: inherit; }
-  .formulario .nombreyapellido,
-  .formulario .email,
-  .formulario .tel {
-    grid-column: 1 / 4; }
-  .formulario .envio {
-    grid-column: 1 / 3; }
+    .formulario .email {
+      grid-column: 1 / 5; }
+    .formulario .tel {
+      grid-column: 1 / 5; }
+    .formulario .nombreyapellido {
+      grid-column: 1 / 5; }
+    .formulario .envio {
+      grid-column: 1 / 5; }
   .mainGaleria {
     display: flex;
     flex-direction: column;

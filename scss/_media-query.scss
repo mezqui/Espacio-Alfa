@@ -2,6 +2,20 @@
   .logoPincel {
     display: none;
   }
+  .encabezado {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    &__lista {
+      position: relative;
+      left: 0px;
+      background-color: $color-principal;
+    }
+    a {
+      display: flex;
+    }
+  }
   nav .encabezado__lista {
     display: none;
   }
@@ -14,7 +28,6 @@
   .container-fluid {
     flex-direction: row-reverse;
   }
-
   .imagenPsp {
     width: 90%;
     align-items: center;
@@ -22,15 +35,6 @@
   }
   .tituloPagina {
     display: none;
-  }
-  .encabezado {
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    padding: 0;
-  }
-  .encabezado a {
-    display: flex;
   }
   .video iframe {
     width: 100%;
@@ -49,11 +53,6 @@
     transition: none;
     transform: none;
   }
-  .encabezado__lista {
-    position: relative;
-    left: 0px;
-    background-color: $color-principal;
-  }
   main {
     text-align: -webkit-center;
   }
@@ -71,16 +70,19 @@
   .formulario {
     grid-template-columns: 1fr 1fr;
     width: inherit;
+    .email {
+      grid-column: 1 / 5;
+    }
+    .tel {
+      grid-column: 1 / 5;
+    }
+    .nombreyapellido{
+      grid-column: 1 / 5;
+    }
+    .envio {
+      grid-column: 1 / 5;
+    }
   }
-  .formulario .nombreyapellido,
-  .formulario .email,
-  .formulario .tel {
-    grid-column: 1 / 4;
-  }
-  .formulario .envio {
-    grid-column: 1 / 3;
-  }
-
   .mainGaleria {
     display: flex;
     flex-direction: column;
