@@ -1,25 +1,24 @@
-
 .ubicacion {
-    margin: 20px;
-    text-align: -webkit-center;
-    &__mapa {
-      width: 60vw;
-      height: 33vw;
-    }
-    &__div {
-      text-align: center;
-    }
-    .btn {
-      margin: 8px;
-      padding: 5px;
-      font-family: $tipografia-h1;
-      font-size: 25px;
-      font-weight: bolder;
-      background-color: $color-secundario;
-      border-color: $color-secundario;
-    }
+  margin: 20px;
+  text-align: -webkit-center;
+  &__mapa {
+    width: 60vw;
+    height: 33vw;
   }
-  
-  #carouselExampleControls {
-    width: 80%;
+  &__div {
+    text-align: center;
   }
+  .btn {
+    margin: 8px;
+    padding: 5px;
+    font-family: $tipografia-h1;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: $color-secundario;
+    border-color: $color-secundario;
+  }
+}
+
+#carouselExampleControls {
+  width: 80%;
+}

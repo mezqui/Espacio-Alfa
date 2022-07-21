@@ -1,29 +1,28 @@
-
 .espacioalfa {
-    font-family: $tipografia-nav;
-    font-weight: bold;
-    border-bottom: solid;
-    font-size: 31px;
-  }
-  
-  .textoQuienes {
-    font-family: $tipografia-text;
-    font-weight: 600;
-    font-size: 21px;
-    padding: 20px;
-    text-align: justify;
-  }
-  
-  .sectionQuienes {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  .imagenesCintia {
-    width: 100%;
-  }
-  
-  .fotoCintia2 {
-    margin: 15px;
-    width: 90%;
-  }
+  font-family: $tipografia-nav;
+  font-weight: bold;
+  border-bottom: solid;
+  font-size: 31px;
+}
+
+.textoQuienes {
+  font-family: $tipografia-text;
+  font-weight: 600;
+  font-size: 21px;
+  padding: 20px;
+  text-align: justify;
+}
+
+.sectionQuienes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.imagenesCintia {
+  width: 100%;
+}
+
+.fotoCintia2 {
+  margin: 15px;
+  width: 90%;
+}

@@ -1,12 +1,12 @@
 @import "./general";
 @import "./base/variables";
-@import './inicio';
-@import './quienes-somos';
-@import './galeria';
-@import './ubicacion';
-@import './contacto';
-@import './media-query';
-@import './animaciones';
+@import "./inicio";
+@import "./quienes-somos";
+@import "./galeria";
+@import "./ubicacion";
+@import "./contacto";
+@import "./animaciones";
+
 
 .texto {
   font-family: $tipografia-text;
@@ -59,7 +59,7 @@ h1 {
     width: fit-content;
     margin: 0 auto;
     position: absolute;
-    left: 45vw; 
+    left: 45vw;
     &__item {
       display: inline-block;
       margin: 0.8vw;
@@ -96,15 +96,17 @@ ul {
       display: inline-block;
       margin: 25px;
       margin-right: 3rem;
-      & .whatsapp {
-        width: 50px;
-        position: fixed;
-        bottom: 25px;
-        right: 5px;
-      }
       &__icono {
         width: 50px;
+        &__whatsapp {
+          width: 50px;
+          position: fixed;
+          bottom: 25px;
+          right: 5px;
+        }
       }
     }
   }
 }
+
+@import "./media-query";

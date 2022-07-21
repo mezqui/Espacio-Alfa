@@ -161,106 +161,6 @@ form div {
   width: 100%;
   padding: 0.7em; }
 
-@media screen and (max-width: 768px) {
-  .logoPincel {
-    display: none; }
-  nav .encabezado__lista {
-    display: none; }
-  .pincelMov {
-    display: none; }
-  .footer__lista__item {
-    margin: 2vw; }
-  .container-fluid {
-    flex-direction: row-reverse; }
-  .imagenPsp {
-    width: 90%;
-    align-items: center;
-    margin: 0; }
-  .tituloPagina {
-    display: none; }
-  .encabezado {
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    padding: 0; }
-  .encabezado a {
-    display: flex; }
-  .video iframe {
-    width: 100%; }
-  .fotoCintia2 {
-    margin: 5px;
-    width: 50%; }
-  .textoQuienes {
-    margin: 0;
-    width: 100%; }
-  .whatsapp {
-    position: relative;
-    right: 0;
-    bottom: 0; }
-  .sectionIndex {
-    flex-direction: column;
-    margin: 10px;
-    transition: none;
-    transform: none; }
-  .encabezado__lista {
-    position: relative;
-    left: 0px;
-    background-color: #f094ff; }
-  main {
-    text-align: -webkit-center; }
-  .sectionQuienes {
-    flex-direction: column-reverse;
-    margin: 10px;
-    width: 90%; }
-  #carouselExampleControls {
-    width: 90%; }
-  nav a {
-    font-size: 4.7vw; }
-  .formulario {
-    grid-template-columns: 1fr 1fr;
-    width: inherit; }
-  .formulario .nombreyapellido,
-  .formulario .email,
-  .formulario .tel {
-    grid-column: 1 / 4; }
-  .formulario .envio {
-    grid-column: 1 / 3; }
-  .mainGaleria {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .footer__lista__item__icono {
-    animation: none; } }
-
-@media screen and (max-width: 425px) {
-  nav a {
-    font-size: 4vw; }
-  h1 {
-    padding: 5px;
-    width: 80%; }
-  .logoPagina {
-    width: 95%; }
-  .footer__lista {
-    text-align: center; }
-  .encabezado a {
-    justify-content: center; }
-  .fotoCintia2 {
-    margin: 5px;
-    width: 80%; }
-  .col {
-    width: 90%; }
-  .row {
-    justify-content: center; }
-  @keyframes iconos {
-    0% {
-      transform: none; } } }
-
-@media screen and (min-width: 769px) {
-  .navbar {
-    display: none; }
-  .card-img-top:hover {
-    transform: scale(1.05); } }
-
 .footer__lista__item__icono {
   animation: iconos 3s linear infinite; }
 
@@ -375,10 +275,110 @@ ul {
       display: inline-block;
       margin: 25px;
       margin-right: 3rem; }
-      .footer__lista__item .whatsapp {
-        width: 50px;
-        position: fixed;
-        bottom: 25px;
-        right: 5px; }
       .footer__lista__item__icono {
         width: 50px; }
+        .footer__lista__item__icono__whatsapp {
+          width: 50px;
+          position: fixed;
+          bottom: 25px;
+          right: 5px; }
+
+@media screen and (max-width: 768px) {
+  .logoPincel {
+    display: none; }
+  nav .encabezado__lista {
+    display: none; }
+  .pincelMov {
+    display: none; }
+  .footer__lista__item {
+    margin: 2vw; }
+  .container-fluid {
+    flex-direction: row-reverse; }
+  .imagenPsp {
+    width: 90%;
+    align-items: center;
+    margin: 0; }
+  .tituloPagina {
+    display: none; }
+  .encabezado {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0; }
+  .encabezado a {
+    display: flex; }
+  .video iframe {
+    width: 100%; }
+  .fotoCintia2 {
+    margin: 5px;
+    width: 50%; }
+  .textoQuienes {
+    margin: 0;
+    width: 100%; }
+  .sectionIndex {
+    flex-direction: column;
+    margin: 10px;
+    transition: none;
+    transform: none; }
+  .encabezado__lista {
+    position: relative;
+    left: 0px;
+    background-color: #f094ff; }
+  main {
+    text-align: -webkit-center; }
+  .sectionQuienes {
+    flex-direction: column-reverse;
+    margin: 10px;
+    width: 90%; }
+  #carouselExampleControls {
+    width: 90%; }
+  nav a {
+    font-size: 4.7vw; }
+  .formulario {
+    grid-template-columns: 1fr 1fr;
+    width: inherit; }
+  .formulario .nombreyapellido,
+  .formulario .email,
+  .formulario .tel {
+    grid-column: 1 / 4; }
+  .formulario .envio {
+    grid-column: 1 / 3; }
+  .mainGaleria {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .footer__lista__item__icono {
+    animation: none; }
+    .footer__lista__item__icono__whatsapp {
+      position: relative;
+      right: 0;
+      bottom: 0; } }
+
+@media screen and (max-width: 425px) {
+  nav a {
+    font-size: 4vw; }
+  h1 {
+    padding: 5px;
+    width: 80%; }
+  .logoPagina {
+    width: 95%; }
+  .footer__lista {
+    text-align: center; }
+  .encabezado a {
+    justify-content: center; }
+  .fotoCintia2 {
+    margin: 5px;
+    width: 80%; }
+  .col {
+    width: 90%; }
+  .row {
+    justify-content: center; }
+  @keyframes iconos {
+    0% {
+      transform: none; } } }
+
+@media screen and (min-width: 769px) {
+  .navbar {
+    display: none; }
+  .card-img-top:hover {
+    transform: scale(1.05); } }
