@@ -1,19 +1,18 @@
 
-
 .ubicacion {
     margin: 20px;
     text-align: -webkit-center;
-    .ubicacion__mapa {
+    &__mapa {
       width: 60vw;
       height: 33vw;
     }
-    .ubicacion__div {
+    &__div {
       text-align: center;
     }
     .btn {
       margin: 8px;
       padding: 5px;
-      font-family: "Gentium Plus", serif;
+      font-family: $tipografia-h1;
       font-size: 25px;
       font-weight: bolder;
       background-color: $color-secundario;

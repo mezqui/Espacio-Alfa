@@ -8,7 +8,7 @@
       width: 70%;
       border-style: solid;
       border-width: 3px;
-      font-family: "Indie Flower", cursive;
+      font-family: $tipografia-text;
       font-weight: bold;
       font-size: 20px;
       box-shadow: 0 0 20px 0 $color-secundario;
@@ -56,12 +56,12 @@
     border: solid 6px $color-terciario;
     border-radius: 100%;
     font-weight: 700;
-  }
-  .botonEnvio:hover {
-    color: $color-principal;
-    background-color: $color-terciario;
-    transform: scale(1.2);
-    transition: all 1s;
+    &:hover {
+      color: $color-principal;
+      background-color: $color-terciario;
+      transform: scale(1.2);
+      transition: all 1s;
+    }
   }
   
   .formulario input,

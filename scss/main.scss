@@ -5,9 +5,11 @@
 @import './galeria';
 @import './ubicacion';
 @import './contacto';
+@import './media-query';
+@import './animaciones';
 
 .texto {
-  font-family: "Indie Flower", cursive;
+  font-family: $tipografia-text;
   font-weight: 600;
   font-size: 21px;
   padding: 20px;
@@ -21,7 +23,7 @@ h1 {
   border: solid 5px $color-secundario;
   padding: 15px;
   width: fit-content;
-  font-family: "Gentium Plus", serif;
+  font-family: $tipografia-h1;
   border-radius: 20px;
   margin: 20px auto;
   text-align: center;
@@ -36,7 +38,7 @@ h1 {
 }
 .navbar {
   width: 100%;
-  font-family: "Cookie", cursive;
+  font-family: $tipografia-nav;
   font-weight: bolder;
 }
 .navbar-brand {
@@ -63,7 +65,7 @@ h1 {
       margin: 0.8vw;
       font-size: 40px;
       font-weight: bolder;
-      font-family: "Cookie", cursive;
+      font-family: $tipografia-nav;
     }
   }
 }
@@ -104,195 +106,5 @@ ul {
         width: 50px;
       }
     }
-  }
-}
-
-/* Animacion */
-.footer__lista__item__icono {
-  animation: iconos 3s linear infinite;
-}
-@keyframes iconos {
-  0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(10px);
-  }
-  50% {
-    transform: translateY(0);
-  }
-  75% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-.pincelMov {
-  width: 25%;
-  position: absolute;
-  top: 5%;
-  right: 40%;
-  animation: pincel 6s linear;
-  opacity: 0;
-}
-@keyframes pincel {
-  4% {
-    opacity: 1;
-  }
-  50% {
-    transform: translateX(30vw);
-  }
-  52% {
-    transform: translateX(30vw);
-  }
-  95% {
-    transform: translateX(0);
-  }
-  96% {
-    opacity: 1;
-  }
-}
-/* media query */
-
-@media screen and (max-width: 768px) {
-  .logoPincel {
-    display: none;
-  }
-  nav .encabezado__lista {
-    display: none;
-  }
-  .pincelMov {
-    display: none;
-  }
-  .footer__lista__item {
-    margin: 2vw;
-  }
-  .container-fluid {
-    flex-direction: row-reverse;
-  }
-
-  .imagenPsp {
-    width: 90%;
-    align-items: center;
-    margin: 0;
-  }
-  .tituloPagina {
-    display: none;
-  }
-  .encabezado {
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    padding: 0;
-  }
-  .encabezado a {
-    display: flex;
-  }
-  .video iframe {
-    width: 100%;
-  }
-  .fotoCintia2 {
-    margin: 5px;
-    width: 50%;
-  }
-  .textoQuienes {
-    margin: 0;
-    width: 100%;
-  }
-
-  .whatsapp {
-    position: relative;
-    right: 0;
-    bottom: 0;
-  }
-  .sectionIndex {
-    flex-direction: column;
-    margin: 10px;
-    transition: none;
-    transform: none;
-  }
-  .encabezado__lista {
-    position: relative;
-    left: 0px;
-    background-color: $color-principal
-  }
-  main {
-    text-align: -webkit-center;
-  }
-  .sectionQuienes {
-    flex-direction: column-reverse;
-    margin: 10px;
-    width: 90%;
-  }
-  #carouselExampleControls {
-    width: 90%;
-  }
-  nav a {
-    font-size: 4.7vw;
-  }
-  .formulario {
-    grid-template-columns: 1fr 1fr;
-    width: inherit;
-  }
-  .formulario .nombreyapellido,
-  .formulario .email,
-  .formulario .tel {
-    grid-column: 1 / 4;
-  }
-  .formulario .envio {
-    grid-column: 1 / 3;
-  }
-
-  .mainGaleria {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer__lista__item__icono {
-    animation: none;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  nav a {
-    font-size: 4vw;
-  }
-  h1 {
-    padding: 5px;
-    width: 80%;
-  }
-  .logoPagina {
-    width: 95%;
-  }
-  .footer__lista {
-    text-align: center;
-  }
-  .encabezado a {
-    justify-content: center;
-  }
-  .fotoCintia2 {
-    margin: 5px;
-    width: 80%;
-  }
-  .col {
-    width: 90%;
-  }
-  .row {
-    justify-content: center;
-  }
-
-  @keyframes iconos {
-    0% {
-      transform: none;
-    }
-  }
-}
-@media screen and (min-width: 769px) {
-  .navbar {
-    display: none;
-  }
-  .card-img-top:hover {
-    transform: scale(1.05);
   }
 }

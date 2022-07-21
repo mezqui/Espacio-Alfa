@@ -1,13 +1,13 @@
 
 .espacioalfa {
-    font-family: "Cookie", cursive;
+    font-family: $tipografia-nav;
     font-weight: bold;
     border-bottom: solid;
     font-size: 31px;
   }
   
   .textoQuienes {
-    font-family: "Indie Flower", cursive;
+    font-family: $tipografia-text;
     font-weight: 600;
     font-size: 21px;
     padding: 20px;

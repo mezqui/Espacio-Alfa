@@ -1,27 +1,26 @@
-
 .clickAqui {
-    font-size: 30px;
+  font-size: 30px;
+}
+.card-text {
+  text-align: justify;
+  font-family: $tipografia-text;
+  font-weight: 600;
+  font-size: 18px;
+}
+.card-title {
+  text-align: center;
+  margin: 10px;
+  font-weight: bold;
+  border-bottom: solid $color-principal;
+}
+.mainGaleria {
+  margin: 0px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  .row {
+    margin: 0%;
   }
-  .card-text {
-    text-align: justify;
-    font-family: "Indie Flower", cursive;
-    font-weight: 600;
-    font-size: 18px;
-  }
-  .card-title {
-    text-align: center;
-    margin: 10px;
-    font-weight: bold;
-    border-bottom: solid $color-principal;
-  }
-  .mainGaleria {
-    margin: 0px;
-    margin-bottom: 30px;
-    margin-top: 10px;
-    .row {
-      margin: 0%;
-    }
-  }
-  .card-img-top {
-    border-radius: 8px;
-  }
+}
+.card-img-top {
+  border-radius: 8px;
+}
