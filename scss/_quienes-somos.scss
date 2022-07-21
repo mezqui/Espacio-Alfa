@@ -1,0 +1,29 @@
+
+.espacioalfa {
+    font-family: "Cookie", cursive;
+    font-weight: bold;
+    border-bottom: solid;
+    font-size: 31px;
+  }
+  
+  .textoQuienes {
+    font-family: "Indie Flower", cursive;
+    font-weight: 600;
+    font-size: 21px;
+    padding: 20px;
+    text-align: justify;
+  }
+  
+  .sectionQuienes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .imagenesCintia {
+    width: 100%;
+  }
+  
+  .fotoCintia2 {
+    margin: 15px;
+    width: 90%;
+  }

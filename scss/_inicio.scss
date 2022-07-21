@@ -1,0 +1,28 @@
+
+.imagenPsp {
+    width: 40vw;
+    margin: 30px;
+    padding: 25px;
+  }
+  .sectionIndex {
+    align-items: center;
+    margin: 10px;
+    flex-direction: row;
+    display: flex;
+  }
+  
+  .textoIndex {
+    font-family: "Indie Flower", cursive;
+    font-weight: 600;
+    font-size: 21px;
+    text-align: justify;
+    margin: 20px;
+  }
+  .video {
+    text-align: center;
+    iframe {
+      width: 560px;
+      height: 315px;
+      padding: 10px;
+    }
+  }
