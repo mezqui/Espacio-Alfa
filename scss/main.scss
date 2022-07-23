@@ -1,5 +1,5 @@
-@import "./general";
 @import "./base/variables";
+@import "./general";
 @import "./inicio";
 @import "./quienes-somos";
 @import "./galeria";
@@ -7,17 +7,16 @@
 @import "./contacto";
 @import "./animaciones";
 
-
 .texto {
-  font-family: $tipografia-text;
   font-weight: 600;
+  font-family: $tipografia-text;
   font-size: 21px;
   padding: 20px;
   text-align: justify;
   margin: 10px;
 }
 
-h1 {
+h2 {
   color: $color-terciario;
   background-color: $color-principal;
   border: solid 5px $color-secundario;

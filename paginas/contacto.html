@@ -24,9 +24,9 @@
     <nav>
         <ul class="encabezado__lista">
         <li class="encabezado__lista__item"> <a href="../index.html">Inicio</a></li>
-        <li class="encabezado__lista__item"> <a href="./quienes-somos.html">Quienes Somos</li></a> 
+        <li class="encabezado__lista__item"> <a href="./quienes-somos.html">Quienes Somos</a></li>
         <li class="encabezado__lista__item"> <a href="./galeria.html">Galeria</a></li>
-        <li class="encabezado__lista__item"> <a href="./ubicacion.html">Ubicación</li></a>
+        <li class="encabezado__lista__item"> <a href="./ubicacion.html">Ubicación</a></li>
         <li class="encabezado__lista__item"> <a href="#">Contacto</a></li>
       </ul>
     </nav> 
@@ -51,29 +51,32 @@
   </header>
   
   <main class="mainFormulario">
-      <h1 class="tituloPagina">Contacto</h1>  
-      <h2 class="textoContacto">Dejá tus datos y te contacto en breve!</h2>
-        <form class="formulario">
-        <div class="nombreyapellido">
-          <label for="nombre">Nombre y Apellido:</label>
-          <input type="text" required id="nombre">
-        </div>
-        <div class="email">
-          <label for="email">Email:</label>
-          <input type="email" required id="email">
-        </div>
-        <div class="tel">
-          <label for="tel">Telefono:</label>
-          <input type="tel" required id="tel">
-        </div>
-        <div class="mensaje">
-          <label for="mensaje">Mensaje:</label>
-          <textarea name="comentarios" id="comentarios" cols="30" rows="10" ></textarea>
-        </div>
-        <div class="envio">
-          <input type="submit" value="Enviar" class="botonEnvio">
-        </div>
-        </form>        
+    <h3 class="textoContacto">Dejá tus datos y te contacto en breve!</h3>
+    <form class="row g-3" >
+      <div class="col-md-6">
+        <label for="inputNombre4" class="form-label">Nombre:</label>
+        <input type="name" class="form-control" id="inputNombre4">
+      </div>
+      <div class="col-md-6">
+        <label for="inputApellido4" class="form-label">Apellido:</label>
+        <input type="name" class="form-control" id="inputApellido4">
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail" class="form-label">Email:</label>
+        <input type="text" class="form-control" id="inputEmail">
+      </div>
+      <div class="col-md-6">
+        <label for="inputTel" class="form-label">Telefono:</label>
+        <input type="number" class="form-control" id="inputTel2">
+      </div>
+      <div class="mb-3">
+        <label for="exampleMensaje1" class="form-label">Mensaje:</label>
+        <textarea class="form-control" id="exampleMensaje1" rows="3"></textarea>
+      </div>
+      <div class="botonEnvio">
+        <button type="submit" class="btn1 btn-primary">Enviar</button>
+      </div>
+    </form>          
   </main>
 
   <footer class="footer">

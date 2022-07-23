@@ -29,7 +29,7 @@
     flex-direction: row-reverse;
   }
   .imagenPsp {
-    width: 90%;
+    width: 80%;
     align-items: center;
     margin: 0;
   }
@@ -68,8 +68,8 @@
     font-size: 4.7vw;
   }
   .formulario {
-    grid-template-columns: 1fr 1fr;
     width: inherit;
+    grid-template-columns: 1fr 1fr;
     .email {
       grid-column: 1 / 5;
     }
@@ -122,10 +122,16 @@
   .col {
     width: 90%;
   }
-  .row {
+  .mainGaleria{
+    .row {
     justify-content: center;
+    }
   }
-
+  .ubicacion{
+    .btn{
+      font-size: 16px;
+    }
+  }
   @keyframes iconos {
     0% {
       transform: none;
@@ -138,5 +144,17 @@
   }
   .card-img-top:hover {
     transform: scale(1.05);
+  }
+  .botonEnvio{
+    text-align: end;
+    .btn1{
+      width: 30%;
+      padding: 10px;
+    }
+  }
+  .mainFormulario{
+    .row {
+    width: 65%;
+    }
   }
 }
