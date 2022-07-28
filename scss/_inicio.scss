@@ -9,16 +9,12 @@
   padding: 25px;
 }
 .sectionIndex {
-  align-items: center;
+  @include flex (row, center, center);
   margin: 10px;
-  flex-direction: row;
-  display: flex;
 }
 
 .textoIndex {
-  font-family: $tipografia-text;
-  font-weight: 600;
-  font-size: 21px;
+  @extend %parrafo;
   text-align: justify;
   margin: 20px;
 }

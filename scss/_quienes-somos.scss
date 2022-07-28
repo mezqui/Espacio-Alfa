@@ -1,22 +1,18 @@
 .espacioalfa {
   font-family: $tipografia-nav;
-  font-weight: bold;
+  font-weight: map-get($bold,"bolder");
   border-bottom: solid;
   font-size: 31px;
 }
 
 .textoQuienes {
-  font-family: $tipografia-text;
-  font-weight: 600;
-  font-size: 21px;
+  @extend %parrafo;
   padding: 20px;
   text-align: justify;
 }
 
 .sectionQuienes {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  @include flex (row, center, center);
 }
 .imagenesCintia {
   width: 100%;

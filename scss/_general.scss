@@ -3,3 +3,98 @@
   margin: 0;
   padding: 0;
 }
+
+.texto {
+  @extend %parrafo;
+  padding: 20px;
+  text-align: justify;
+  margin: 10px;
+}
+
+h2 {
+  color: $color-terciario;
+  background-color: $color-principal;
+  border: solid 5px $color-secundario;
+  padding: 15px;
+  width: fit-content;
+  font-family: $tipografia-h1;
+  border-radius: 20px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.logoPagina {
+  width: 100%;
+}
+
+.logoPincel {
+  width: 55%;
+}
+.navbar {
+  width: 100%;
+  font-family: $tipografia-nav;
+  font-weight: map-get($bold,"bolder");
+}
+.navbar-brand {
+  font-size: 42px;
+}
+.nav-link {
+  font-size: 22px;
+  justify-content: center;
+}
+
+.encabezado {
+  @include flex (row, flex-end, center);
+  margin-top: 5px;
+  padding: 10px;
+  &__lista {
+    width: fit-content;
+    margin: 0 auto;
+    position: absolute;
+    left: 45vw;
+    &__item {
+      @include display (inline-block, 0.8vw);
+      font-size: 40px;
+      font-weight: map-get($bold,"bolder");
+      font-family: $tipografia-nav;
+    }
+  }
+}
+
+nav {
+  align-self: center;
+  & a {
+    text-decoration: none;
+    color: $color-terciario;
+    font-size: 3vw;
+  }
+  &:hover {
+    color: $color-secundario;
+    transition: all 1s;
+  }
+}
+ul {
+  padding-left: 0;
+}
+.footer {
+  text-align: right;
+  list-style: none;
+  background-color: $color-principal;
+  &__lista {
+    width: 100%;
+    margin-bottom: 0;
+    &__item {
+      @include display (inline-block, 25px);
+      margin-right: 3rem;
+      &__icono {
+        width: 50px;
+        &__whatsapp {
+          width: 50px;
+          position: fixed;
+          bottom: 25px;
+          right: 5px;
+        }
+      }
+    }
+  }
+}

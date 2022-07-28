@@ -1,184 +1,13 @@
+.texto, .textoIndex, .textoQuienes {
+  font-weight: 600;
+  font-family: "Indie Flower", cursive;
+  font-size: 21px; }
+
 * {
   margin: 0;
   padding: 0; }
 
-.imagenIndex {
-  width: 100%;
-  margin: 5px 0px 15px 0px; }
-
-.imagenPsp {
-  width: 40vw;
-  margin: 30px;
-  padding: 25px; }
-
-.sectionIndex {
-  align-items: center;
-  margin: 10px;
-  flex-direction: row;
-  display: flex; }
-
-.textoIndex {
-  font-family: "Indie Flower", cursive;
-  font-weight: 600;
-  font-size: 21px;
-  text-align: justify;
-  margin: 20px; }
-
-.video {
-  text-align: center; }
-  .video iframe {
-    width: 560px;
-    height: 315px;
-    padding: 10px; }
-
-.espacioalfa {
-  font-family: "Cookie", cursive;
-  font-weight: bold;
-  border-bottom: solid;
-  font-size: 31px; }
-
-.textoQuienes {
-  font-family: "Indie Flower", cursive;
-  font-weight: 600;
-  font-size: 21px;
-  padding: 20px;
-  text-align: justify; }
-
-.sectionQuienes {
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
-
-.imagenesCintia {
-  width: 100%; }
-
-.fotoCintia2 {
-  margin: 15px;
-  width: 90%; }
-
-.clickAqui {
-  font-size: 30px; }
-
-.card-text {
-  text-align: justify;
-  font-family: "Indie Flower", cursive;
-  font-weight: 600;
-  font-size: 18px; }
-
-.card-title {
-  text-align: center;
-  margin: 10px;
-  font-weight: bold;
-  border-bottom: solid #f094ff; }
-
-.mainGaleria {
-  margin: 0px;
-  margin-bottom: 30px;
-  margin-top: 10px; }
-  .mainGaleria .row {
-    margin: 0%; }
-
-.card-img-top {
-  border-radius: 8px; }
-
-.ubicacion {
-  margin: 20px;
-  text-align: -webkit-center; }
-  .ubicacion__mapa {
-    width: 60vw;
-    height: 33vw; }
-  .ubicacion__div {
-    text-align: center; }
-  .ubicacion .btn {
-    margin: 10px;
-    padding: 5px;
-    font-family: "Gentium Plus", serif;
-    font-size: 25px;
-    font-weight: bolder;
-    background-color: #8a9bff;
-    border-color: #8a9bff; }
-
-#carouselExampleControls {
-  width: 80%; }
-
-.mainFormulario {
-  text-align: -webkit-center; }
-  .mainFormulario .row {
-    background-color: #8a9bff;
-    align-content: center;
-    margin: 20px;
-    font-family: "Gentium Plus", serif;
-    font-weight: bold;
-    font-size: 20px;
-    box-shadow: 0 0 20px 0 #8a9bff;
-    place-content: center; }
-    .mainFormulario .row .form-control {
-      width: 95%; }
-
-.textoContacto {
-  text-align: center;
-  background-color: #f094ff;
-  border: #1f2721;
-  width: fit-content;
-  margin: 35px;
-  font-family: "Indie Flower", cursive;
-  font-weight: 500; }
-
-.mb-3 {
-  margin: 2px;
-  align-self: end;
-  grid-column-start: 4; }
-
-.btn1 {
-  background-color: #f094ff;
-  font-weight: bold;
-  color: #1f2721;
-  width: 95%;
-  margin: 10px;
-  border: solid 2px #1f2721; }
-  .btn1:hover {
-    color: #f094ff;
-    background-color: #1f2721; }
-
-.footer__lista__item__icono {
-  animation: iconos 3s linear infinite; }
-
-@keyframes iconos {
-  0% {
-    transform: translateY(0); }
-  25% {
-    transform: translateY(10px); }
-  50% {
-    transform: translateY(0); }
-  75% {
-    transform: translateY(-10px); }
-  100% {
-    transform: translateY(0); } }
-
-.pincelMov {
-  width: 25%;
-  position: absolute;
-  top: 5%;
-  right: 40%;
-  animation: pincel 6s linear;
-  opacity: 0; }
-
-@keyframes pincel {
-  4% {
-    opacity: 1; }
-  50% {
-    transform: translateX(30vw); }
-  52% {
-    transform: translateX(30vw); }
-  95% {
-    transform: translateX(0); }
-  96% {
-    opacity: 1; } }
-
 .texto {
-  font-weight: 600;
-  font-family: "Indie Flower", cursive;
-  font-size: 21px;
   padding: 20px;
   text-align: justify;
   margin: 10px; }
@@ -216,6 +45,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
   margin-top: 5px;
   padding: 10px; }
   .encabezado__lista {
@@ -262,11 +92,179 @@ ul {
           bottom: 25px;
           right: 5px; }
 
+.imagenIndex {
+  width: 100%;
+  margin: 5px 0px 15px 0px; }
+
+.imagenPsp {
+  width: 40vw;
+  margin: 30px;
+  padding: 25px; }
+
+.sectionIndex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px; }
+
+.textoIndex {
+  text-align: justify;
+  margin: 20px; }
+
+.video {
+  text-align: center; }
+  .video iframe {
+    width: 560px;
+    height: 315px;
+    padding: 10px; }
+
+.espacioalfa {
+  font-family: "Cookie", cursive;
+  font-weight: bolder;
+  border-bottom: solid;
+  font-size: 31px; }
+
+.textoQuienes {
+  padding: 20px;
+  text-align: justify; }
+
+.sectionQuienes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.imagenesCintia {
+  width: 100%; }
+
+.fotoCintia2 {
+  margin: 15px;
+  width: 90%; }
+
+.clickAqui {
+  font-size: 30px; }
+
+.card-text {
+  text-align: justify;
+  font-family: "Indie Flower", cursive;
+  font-weight: 600;
+  font-size: 18px; }
+
+.card-title {
+  text-align: center;
+  margin: 10px;
+  font-weight: bolder;
+  border-bottom: solid #f094ff; }
+
+.mainGaleria {
+  margin: 10px 0px 30px 0px; }
+  .mainGaleria .row {
+    margin: 0%; }
+
+.card-img-top {
+  border-radius: 8px; }
+
+.ubicacion {
+  margin: 20px;
+  text-align: -webkit-center; }
+  .ubicacion__mapa {
+    width: 60vw;
+    height: 33vw; }
+  .ubicacion__div {
+    text-align: center; }
+  .ubicacion .btn {
+    margin: 10px;
+    padding: 5px;
+    font-family: "Gentium Plus", serif;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: #8a9bff;
+    border-color: #8a9bff; }
+
+#carouselExampleControls {
+  width: 80%; }
+
+.mainFormulario {
+  text-align: -webkit-center; }
+  .mainFormulario .row {
+    background-color: #8a9bff;
+    align-content: center;
+    margin: 20px;
+    font-family: "Gentium Plus", serif;
+    font-weight: 500;
+    font-size: 20px;
+    box-shadow: 0 0 20px 0 #8a9bff;
+    place-content: center; }
+    .mainFormulario .row .form-control {
+      width: 95%; }
+
+.textoContacto {
+  text-align: center;
+  background-color: #f094ff;
+  border: #1f2721;
+  width: fit-content;
+  margin: 35px;
+  font-family: "Indie Flower", cursive;
+  font-weight: 500; }
+
+.mb-3 {
+  margin: 2px;
+  align-self: end;
+  grid-column-start: 4; }
+
+.btn1 {
+  background-color: #f094ff;
+  color: #1f2721;
+  width: 95%;
+  margin: 10px;
+  border: solid 2px #1f2721; }
+  .btn1:hover {
+    color: #f094ff;
+    background-color: #1f2721; }
+
+.footer__lista__item__icono {
+  animation: iconos 3s linear infinite; }
+
+@keyframes iconos {
+  0% {
+    transform: translateY(0); }
+  25% {
+    transform: translateY(10px); }
+  50% {
+    transform: translateY(0); }
+  75% {
+    transform: translateY(-10px); }
+  100% {
+    transform: translateY(0); } }
+
+.pincelMov {
+  width: 25%;
+  position: absolute;
+  top: 5%;
+  right: 40%;
+  animation: pincel 6s linear;
+  opacity: 0; }
+
+@keyframes pincel {
+  4% {
+    opacity: 1; }
+  50% {
+    transform: translateX(30vw); }
+  52% {
+    transform: translateX(30vw); }
+  95% {
+    transform: translateX(0); }
+  96% {
+    opacity: 1; } }
+
 @media screen and (max-width: 768px) {
   .logoPincel {
     display: none; }
   .encabezado {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
     padding: 0; }
@@ -313,20 +311,10 @@ ul {
     width: 90%; }
   nav a {
     font-size: 4.7vw; }
-  .formulario {
-    width: inherit;
-    grid-template-columns: 1fr 1fr; }
-    .formulario .email {
-      grid-column: 1 / 5; }
-    .formulario .tel {
-      grid-column: 1 / 5; }
-    .formulario .nombreyapellido {
-      grid-column: 1 / 5; }
-    .formulario .envio {
-      grid-column: 1 / 5; }
   .mainGaleria {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center; }
   .footer__lista__item__icono {
     animation: none; }

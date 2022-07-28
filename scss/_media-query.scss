@@ -3,8 +3,7 @@
     display: none;
   }
   .encabezado {
-    flex-direction: column;
-    align-items: center;
+    @include flex (column, center, center);
     margin: 0 auto;
     padding: 0;
     &__lista {
@@ -67,26 +66,8 @@
   nav a {
     font-size: 4.7vw;
   }
-  .formulario {
-    width: inherit;
-    grid-template-columns: 1fr 1fr;
-    .email {
-      grid-column: 1 / 5;
-    }
-    .tel {
-      grid-column: 1 / 5;
-    }
-    .nombreyapellido{
-      grid-column: 1 / 5;
-    }
-    .envio {
-      grid-column: 1 / 5;
-    }
-  }
   .mainGaleria {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex (column, center, center);
   }
   .footer__lista__item__icono {
     animation: none;

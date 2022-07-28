@@ -13,7 +13,7 @@
     padding: 5px;
     font-family: $tipografia-h1;
     font-size: 25px;
-    font-weight: bolder;
+    font-weight: map-get($bold,"bolder");
     background-color: $color-secundario;
     border-color: $color-secundario;
   }

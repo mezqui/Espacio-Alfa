@@ -1,0 +1,17 @@
+%parrafo{
+    font-weight: 600;
+    font-family: $tipografia-text;
+    font-size: 21px;
+}
+
+@mixin flex ($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin display ($display, $margin) {
+    display: $display;
+    margin: $margin;
+}

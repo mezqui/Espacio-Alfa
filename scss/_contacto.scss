@@ -5,7 +5,7 @@
     align-content: center;
     margin: 20px;
     font-family: $tipografia-h1;
-    font-weight: bold;
+    font-weight: map-get($bold,"500");
     font-size: 20px;
     box-shadow: 0 0 20px 0 $color-secundario;
     place-content: center;
@@ -22,7 +22,7 @@
   width: fit-content;
   margin: 35px;
   font-family: $tipografia-text;
-  font-weight: 500;
+  font-weight: map-get($bold,"500");
 }
 .mb-3 {
   margin: 2px;
@@ -31,7 +31,6 @@
 }
 .btn1 {
   background-color: $color-principal;
-  font-weight:bold;
   color: $color-terciario;
   width: 95%;
   margin: 10px;
