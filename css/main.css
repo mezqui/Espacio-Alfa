@@ -214,12 +214,12 @@ ul {
   font-size: 28px; }
 
 .btn1 {
-  margin: 10px;
-  width: 95%;
-  padding: 0;
   background-color: #f094ff;
   color: #1f2721;
-  border: solid 2px #1f2721; }
+  border: solid 2px #1f2721;
+  margin: 10px;
+  width: 95%;
+  padding: 0; }
   .btn1:hover {
     color: #f094ff;
     background-color: #1f2721; }

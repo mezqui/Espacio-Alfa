@@ -23,10 +23,10 @@
 }
 
 .btn1 {
-  @include mwp (10px, 95%, 0);
   background-color: $color-principal;
   color: $color-terciario;
   border: solid 2px $color-terciario;
+  @include mwp (10px, 95%, 0);
   &:hover {
     color: $color-principal;
     background-color: $color-terciario;
