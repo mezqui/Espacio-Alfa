@@ -1,8 +1,6 @@
 .espacioalfa {
-  font-family: $tipografia-nav;
-  font-weight: map-get($bold,"bolder");
+  @include font ($tipografia-nav, map-get($bold, "bolder"), 31px);
   border-bottom: solid;
-  font-size: 31px;
 }
 
 .textoQuienes {
@@ -19,6 +17,5 @@
 }
 
 .fotoCintia2 {
-  margin: 15px;
-  width: 90%;
+  @include mwp (15px, 90%, 0);
 }

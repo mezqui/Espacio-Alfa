@@ -17,7 +17,7 @@ h2 {
   border: solid 5px $color-secundario;
   padding: 15px;
   width: fit-content;
-  font-family: $tipografia-h1;
+  font-family: $tipografia-h;
   border-radius: 20px;
   margin: 20px auto;
   text-align: center;
@@ -54,9 +54,7 @@ h2 {
     left: 45vw;
     &__item {
       @include display (inline-block, 0.8vw);
-      font-size: 40px;
-      font-weight: map-get($bold,"bolder");
-      font-family: $tipografia-nav;
+      @include font ($tipografia-nav, map-get($bold, "bolder"), 40px);
     }
   }
 }

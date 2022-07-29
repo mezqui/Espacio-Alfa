@@ -9,11 +9,8 @@
     text-align: center;
   }
   .btn {
-    margin: 10px;
-    padding: 5px;
-    font-family: $tipografia-h1;
-    font-size: 25px;
-    font-weight: map-get($bold,"bolder");
+    @include mwp (10px, fit-content, 5px); 
+    @include font ($tipografia-h, map-get($bold, "bolder"), 25px);
     background-color: $color-secundario;
     border-color: $color-secundario;
   }

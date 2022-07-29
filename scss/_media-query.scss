@@ -83,10 +83,7 @@
   nav a {
     font-size: 4vw;
   }
-  h1 {
-    padding: 5px;
-    width: 80%;
-  }
+
   .logoPagina {
     width: 95%;
   }
@@ -111,6 +108,7 @@
   .ubicacion{
     .btn{
       font-size: 16px;
+      width: 85%;
     }
   }
   @keyframes iconos {
@@ -129,8 +127,7 @@
   .botonEnvio{
     text-align: end;
     .btn1{
-      width: 30%;
-      padding: 10px;
+      @include mwp (0, 30%, 10px);  
     }
   }
   .mainFormulario{

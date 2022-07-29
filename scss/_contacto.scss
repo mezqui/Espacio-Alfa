@@ -4,9 +4,7 @@
     background-color: $color-secundario;
     align-content: center;
     margin: 20px;
-    font-family: $tipografia-h1;
-    font-weight: map-get($bold,"500");
-    font-size: 20px;
+    @include font ($tipografia-h, map-get($bold, "500"), 20px);
     box-shadow: 0 0 20px 0 $color-secundario;
     place-content: center;
     .form-control{
@@ -21,19 +19,13 @@
   border: $color-terciario;
   width: fit-content;
   margin: 35px;
-  font-family: $tipografia-text;
-  font-weight: map-get($bold,"500");
+  @include font ($tipografia-text, map-get($bold, "500"), 28px);
 }
-.mb-3 {
-  margin: 2px;
-  align-self: end;
-  grid-column-start: 4;
-}
+
 .btn1 {
+  @include mwp (10px, 95%, 0);
   background-color: $color-principal;
   color: $color-terciario;
-  width: 95%;
-  margin: 10px;
   border: solid 2px $color-terciario;
   &:hover {
     color: $color-principal;

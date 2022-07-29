@@ -3,9 +3,7 @@
 }
 .card-text {
   text-align: justify;
-  font-family: $tipografia-text;
-  font-weight: map-get($bold,"600");
-  font-size: 18px;
+  @include font ($tipografia-text, map-get($bold, "600"), 18px);
 }
 .card-title {
   text-align: center;

@@ -1,12 +1,9 @@
 .imagenIndex{
-  width: 100%;
-  margin: 5px 0px 15px 0px;
+  @include mwp (5px 0px 15px 0px, 100%, 0)
 }
 
 .imagenPsp {
-  width: 40vw;
-  margin: 30px;
-  padding: 25px;
+  @include mwp (30px, 40vw, 25px)
 }
 .sectionIndex {
   @include flex (row, center, center);
@@ -21,8 +18,7 @@
 .video {
   text-align: center;
   iframe {
-    width: 560px;
+    @include mwp (0, 560px, 10px);
     height: 315px;
-    padding: 10px;
   }
 }

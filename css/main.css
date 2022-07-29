@@ -56,9 +56,9 @@ h2 {
     .encabezado__lista__item {
       display: inline-block;
       margin: 0.8vw;
-      font-size: 40px;
+      font-family: "Cookie", cursive;
       font-weight: bolder;
-      font-family: "Cookie", cursive; }
+      font-size: 40px; }
 
 nav {
   align-self: center; }
@@ -93,12 +93,13 @@ ul {
           right: 5px; }
 
 .imagenIndex {
+  margin: 5px 0px 15px 0px;
   width: 100%;
-  margin: 5px 0px 15px 0px; }
+  padding: 0; }
 
 .imagenPsp {
-  width: 40vw;
   margin: 30px;
+  width: 40vw;
   padding: 25px; }
 
 .sectionIndex {
@@ -115,15 +116,16 @@ ul {
 .video {
   text-align: center; }
   .video iframe {
+    margin: 0;
     width: 560px;
-    height: 315px;
-    padding: 10px; }
+    padding: 10px;
+    height: 315px; }
 
 .espacioalfa {
   font-family: "Cookie", cursive;
   font-weight: bolder;
-  border-bottom: solid;
-  font-size: 31px; }
+  font-size: 31px;
+  border-bottom: solid; }
 
 .textoQuienes {
   padding: 20px;
@@ -140,7 +142,8 @@ ul {
 
 .fotoCintia2 {
   margin: 15px;
-  width: 90%; }
+  width: 90%;
+  padding: 0; }
 
 .clickAqui {
   font-size: 30px; }
@@ -175,10 +178,11 @@ ul {
     text-align: center; }
   .ubicacion .btn {
     margin: 10px;
+    width: fit-content;
     padding: 5px;
     font-family: "Gentium Plus", serif;
-    font-size: 25px;
     font-weight: bolder;
+    font-size: 25px;
     background-color: #8a9bff;
     border-color: #8a9bff; }
 
@@ -206,18 +210,15 @@ ul {
   width: fit-content;
   margin: 35px;
   font-family: "Indie Flower", cursive;
-  font-weight: 500; }
-
-.mb-3 {
-  margin: 2px;
-  align-self: end;
-  grid-column-start: 4; }
+  font-weight: 500;
+  font-size: 28px; }
 
 .btn1 {
+  margin: 10px;
+  width: 95%;
+  padding: 0;
   background-color: #f094ff;
   color: #1f2721;
-  width: 95%;
-  margin: 10px;
   border: solid 2px #1f2721; }
   .btn1:hover {
     color: #f094ff;
@@ -326,9 +327,6 @@ ul {
 @media screen and (max-width: 425px) {
   nav a {
     font-size: 4vw; }
-  h1 {
-    padding: 5px;
-    width: 80%; }
   .logoPagina {
     width: 95%; }
   .footer__lista {
@@ -343,7 +341,8 @@ ul {
   .mainGaleria .row {
     justify-content: center; }
   .ubicacion .btn {
-    font-size: 16px; }
+    font-size: 16px;
+    width: 85%; }
   @keyframes iconos {
     0% {
       transform: none; } } }
@@ -356,6 +355,7 @@ ul {
   .botonEnvio {
     text-align: end; }
     .botonEnvio .btn1 {
+      margin: 0;
       width: 30%;
       padding: 10px; }
   .mainFormulario .row {
