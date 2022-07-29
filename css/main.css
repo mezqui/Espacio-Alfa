@@ -355,7 +355,7 @@ ul {
   .botonEnvio {
     text-align: end; }
     .botonEnvio .btn1 {
-      margin: 0;
+      margin: 10px;
       width: 30%;
       padding: 10px; }
   .mainFormulario .row {

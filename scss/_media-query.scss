@@ -127,7 +127,7 @@
   .botonEnvio{
     text-align: end;
     .btn1{
-      @include mwp (0, 30%, 10px);  
+      @include mwp (10px, 30%, 10px);  
     }
   }
   .mainFormulario{
