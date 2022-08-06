@@ -35,7 +35,7 @@ nav {
   & a {
     text-decoration: none;
     color: $color-terciario;
-    @include font ($tipografia-h, map-get($bold, "bolder"), 2.5vw);
+    @include font ($tipografia-h, map-get($bold, "bolder"), 2.4vw);
   }
   &:hover {
     color: $color-secundario;
