@@ -1,4 +1,4 @@
-.texto, .textoIndex, .textoQuienes {
+.texto, .textoIndex, .textoAcerca {
   font-weight: 600;
   font-family: "Indie Flower", cursive;
   font-size: 21px; }
@@ -11,17 +11,6 @@
   padding: 20px;
   text-align: justify;
   margin: 10px; }
-
-h2 {
-  color: #1f2721;
-  background-color: #f094ff;
-  border: solid 5px #8a9bff;
-  padding: 15px;
-  width: fit-content;
-  font-family: "Gentium Plus", serif;
-  border-radius: 20px;
-  margin: 20px auto;
-  text-align: center; }
 
 .logoPagina {
   width: 100%; }
@@ -41,6 +30,18 @@ h2 {
   font-size: 22px;
   justify-content: center; }
 
+nav {
+  align-self: center; }
+  nav a {
+    text-decoration: none;
+    color: #1f2721;
+    font-family: "Gentium Plus", serif;
+    font-weight: bolder;
+    font-size: 2.5vw; }
+  nav:hover {
+    color: #8a9bff;
+    transition: all 1s; }
+
 .encabezado {
   display: flex;
   flex-direction: row;
@@ -55,20 +56,7 @@ h2 {
     left: 45vw; }
     .encabezado__lista__item {
       display: inline-block;
-      margin: 0.8vw;
-      font-family: "Cookie", cursive;
-      font-weight: bolder;
-      font-size: 40px; }
-
-nav {
-  align-self: center; }
-  nav a {
-    text-decoration: none;
-    color: #1f2721;
-    font-size: 3vw; }
-  nav:hover {
-    color: #8a9bff;
-    transition: all 1s; }
+      margin: 0.8vw; }
 
 ul {
   padding-left: 0; }
@@ -127,11 +115,11 @@ ul {
   font-size: 31px;
   border-bottom: solid; }
 
-.textoQuienes {
+.textoAcerca {
   padding: 20px;
   text-align: justify; }
 
-.sectionQuienes {
+.sectionAcerca {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -160,23 +148,25 @@ ul {
   font-weight: bolder;
   border-bottom: solid #f094ff; }
 
-.mainGaleria {
+.mainValores {
   margin: 10px 0px 30px 0px; }
-  .mainGaleria .row {
+  .mainValores .row {
     margin: 0%; }
+  .mainValores .card {
+    height: 100%; }
 
 .card-img-top {
   border-radius: 8px; }
 
-.ubicacion {
+.recursos {
   margin: 20px;
   text-align: -webkit-center; }
-  .ubicacion__mapa {
+  .recursos__mapa {
     width: 60vw;
     height: 33vw; }
-  .ubicacion__div {
+  .recursos__div {
     text-align: center; }
-  .ubicacion .btn {
+  .recursos .btn {
     margin: 10px;
     width: fit-content;
     padding: 5px;
@@ -223,6 +213,29 @@ ul {
   .btn1:hover {
     color: #f094ff;
     background-color: #1f2721; }
+
+.ubicacion {
+  margin: 20px;
+  text-align: -webkit-center; }
+  .ubicacion__mapa {
+    width: 60vw;
+    height: 33vw; }
+  .ubicacion__div {
+    text-align: center; }
+  .ubicacion__texto {
+    font-family: "Indie Flower", cursive;
+    font-weight: bolder;
+    font-size: 2.3vw;
+    text-align: justify; }
+  .ubicacion .btn {
+    margin: 10px;
+    width: fit-content;
+    padding: 5px;
+    font-family: "Indie Flower", cursive;
+    font-weight: bolder;
+    font-size: 25px;
+    background-color: #8a9bff;
+    border-color: #8a9bff; }
 
 .footer__lista__item__icono {
   animation: iconos 3s linear infinite; }
@@ -287,14 +300,12 @@ ul {
     width: 80%;
     align-items: center;
     margin: 0; }
-  .tituloPagina {
-    display: none; }
   .video iframe {
     width: 100%; }
   .fotoCintia2 {
     margin: 5px;
     width: 50%; }
-  .textoQuienes {
+  .textoAcerca {
     margin: 0;
     width: 100%; }
   .sectionIndex {
@@ -304,15 +315,15 @@ ul {
     transform: none; }
   main {
     text-align: -webkit-center; }
-  .sectionQuienes {
+  .sectionAcerca {
     flex-direction: column-reverse;
     margin: 10px;
     width: 90%; }
   #carouselExampleControls {
     width: 90%; }
-  nav a {
-    font-size: 4.7vw; }
-  .mainGaleria {
+  .navbar-brand {
+    font-size: 42px; }
+  .mainValores {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -325,8 +336,6 @@ ul {
       bottom: 0; } }
 
 @media screen and (max-width: 425px) {
-  nav a {
-    font-size: 4vw; }
   .logoPagina {
     width: 95%; }
   .footer__lista {
@@ -338,8 +347,10 @@ ul {
     width: 80%; }
   .col {
     width: 90%; }
-  .mainGaleria .row {
+  .mainValores .row {
     justify-content: center; }
+  .navbar-brand {
+    font-size: 7vw; }
   .ubicacion .btn {
     font-size: 16px;
     width: 85%; }

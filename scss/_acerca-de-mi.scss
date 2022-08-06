@@ -3,13 +3,13 @@
   border-bottom: solid;
 }
 
-.textoQuienes {
+.textoAcerca {
   @extend %parrafo;
   padding: 20px;
   text-align: justify;
 }
 
-.sectionQuienes {
+.sectionAcerca {
   @include flex (row, center, center);
 }
 .imagenesCintia {

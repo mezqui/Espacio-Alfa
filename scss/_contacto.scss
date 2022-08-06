@@ -32,3 +32,25 @@
     background-color: $color-terciario;
   }
 }
+
+.ubicacion {
+  margin: 20px;
+  text-align: -webkit-center;
+  &__mapa {
+    width: 60vw;
+    height: 33vw;
+  }
+  &__div {
+    text-align: center;
+  }
+  &__texto{
+    @include font ($tipografia-text, map-get($bold, "bolder"), 2.3vw);
+    text-align: justify;
+  }
+  .btn {
+    @include mwp (10px, fit-content, 5px); 
+    @include font ($tipografia-text, map-get($bold, "bolder"), 25px);
+    background-color: $color-secundario;
+    border-color: $color-secundario;
+  }
+}

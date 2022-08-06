@@ -11,12 +11,16 @@
   font-weight: map-get($bold,"bolder");
   border-bottom: solid $color-principal;
 }
-.mainGaleria {
+.mainValores {
   margin: 10px 0px 30px 0px ;
   .row{
     margin: 0%;
+  }
+  .card{
+    height: 100%;
   }
 }
 .card-img-top {
   border-radius: 8px;
 }
+

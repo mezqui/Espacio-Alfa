@@ -32,9 +32,6 @@
     align-items: center;
     margin: 0;
   }
-  .tituloPagina {
-    display: none;
-  }
   .video iframe {
     width: 100%;
   }
@@ -42,7 +39,7 @@
     margin: 5px;
     width: 50%;
   }
-  .textoQuienes {
+  .textoAcerca {
     margin: 0;
     width: 100%;
   }
@@ -55,7 +52,7 @@
   main {
     text-align: -webkit-center;
   }
-  .sectionQuienes {
+  .sectionAcerca {
     flex-direction: column-reverse;
     margin: 10px;
     width: 90%;
@@ -63,10 +60,10 @@
   #carouselExampleControls {
     width: 90%;
   }
-  nav a {
-    font-size: 4.7vw;
+  .navbar-brand {
+    font-size: 42px;
   }
-  .mainGaleria {
+  .mainValores {
     @include flex (column, center, center);
   }
   .footer__lista__item__icono {
@@ -80,10 +77,6 @@
 }
 
 @media screen and (max-width: 425px) {
-  nav a {
-    font-size: 4vw;
-  }
-
   .logoPagina {
     width: 95%;
   }
@@ -100,10 +93,13 @@
   .col {
     width: 90%;
   }
-  .mainGaleria{
+  .mainValores{
     .row {
     justify-content: center;
     }
+  }
+  .navbar-brand {
+    font-size: 7vw;
   }
   .ubicacion{
     .btn{
