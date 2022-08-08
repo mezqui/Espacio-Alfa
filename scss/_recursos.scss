@@ -1,21 +1,33 @@
 .recursos {
   margin: 20px;
-  text-align: -webkit-center;
-  &__mapa {
-    width: 60vw;
-    height: 33vw;
-  }
-  &__div {
-    text-align: center;
-  }
-  .btn {
-    @include mwp (10px, fit-content, 5px); 
-    @include font ($tipografia-h, map-get($bold, "bolder"), 25px);
-    background-color: $color-secundario;
-    border-color: $color-secundario;
+}
+.carousel-item{
+  margin-top: 10px;
+  img{
+    height: 100vh;
+    opacity: 0.5;
   }
 }
-
-#carouselExampleControls {
-  width: 80%;
+.carousel-caption{
+  color: $color-terciario;
+  margin: 10px;
+  p{
+  @include font ($tipografia-h, map-get($bold, "100"), 20px);
+  }
+  h5{
+    @include font ($tipografia-text, map-get($bold, "bolder"), 36px);
+  }
+}
+.recursosMobile {
+  margin: 10px 0px 30px 0px ;
+  .row{
+    margin: 0%;
+    justify-content: center;
+  }
+  .card{
+    margin: 10px;
+    &-img-top{
+      height: 275px;
+    }
+  }
 }

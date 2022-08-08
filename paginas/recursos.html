@@ -53,46 +53,85 @@
  
   <main>
     <section class="recursos">
-      <div class="texto">
-        <p>Podes encontrarnos en Pinto 1734, ciudad de Tandil, Provincia de Buenos Aires</p>
-      </div>
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>          
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../imagenes/mapa-argentina.jpg" class="d-block w-100" alt="Mapa Argentina">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="../imagenes/memotest-infantil.jpg" class="d-block w-100" alt="Imagen memotest infantil">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Memotest Infantil</h5>
+              <p>Memotest Infantil se compone de fichas repetidas que mezcladas se colocan sobre la mesa con la figura hacia abajo formando un cuadro. El interés del juego reside en observar atentamente las fichas que se dan vuelta reteniendo en la memoria el lugar que ocupaban para poder levantarlas cuando se las necesite.</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="../imagenes/mapa-provincia-buenos-aires.jpg" class="d-block w-100" alt="Mapa Provincia Buenos Aires">
+            <img src="../imagenes/armando-rompecabezas.jpg" class="d-block w-100" alt="Niño armando rompecabezas">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Rompecabezas</h5>
+              <p>El juego con rompecabezas ofrece una oportunidad excelente de aumentar las habilidades cognitivas y las destrezas de la motricidad fina. Pero también puede ser un momento de desarrollar las habilidades sociales, emocionales y lingüísticas.</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="../imagenes/mapa-tandil.jpg" class="d-block w-100" alt="Mapa Ciudad de Tandil">
-          </div>
+            <img src="../imagenes/bingo-nino.jpg" class="d-block w-100" alt="Niño jugando al bingo">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bingo</h5>
+              <p>Este juego permite practicar operaciones con números naturales, operaciones, agilidad en cálculos sencillos a realizar mentalmente. Hay varias modalidades de juego pero todas tienen el mismo objetivo, hacer que los alumnos realicen una serie de cálculos matemáticos.</p>
+            </div>
+          </div>          
           <div class="carousel-item">
-            <img src="../imagenes/mapa-pinto1734.jpg" class="d-block w-100" alt="Mapa localizacion Espacio Alfa">
-          </div>            
-          <div class="carousel-item">
-            <img src="../imagenes/mapa-pinto1734-street.jpg" class="d-block w-100" alt="Vista vereda Espacio Alfa">
+            <img src="../imagenes/secuencia-didactica.jpg" class="d-block w-100" alt="Niños haciendo una secuencia didactica con sus nombres">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Secuencia didáctica</h5>
+              <p>La secuencia didáctica es un conjunto de actividades de aprendizaje interrelacionadas y encadenadas, orientadas a la elaboración de un producto final que responda satisfactoriamente a la práctica social y cultural que le da sentido.</p>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <p class="btn">
-        <button class="btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">¿Necesitas ayuda de como llegar?</button>
-      </p>
-      <div>
-        <div class="collapse-horizontal collapse" id="collapseWidthExample">
-          <div class="card card-body" style="width: fit-content;">
-            <div class="recursos__div"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1586.4474200943998!2d-59.118907987314614!3d-37.32131857736563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95911feee7ee5faf%3A0x7b9593c7552926f6!2sPinto%201734%2C%20B7001%20Tandil%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1654647600355!5m2!1ses!2sar" width="80" height="80" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="recursos__mapa"></iframe></div>
+    </section>
+      <!-- Mobile -->
+    <section class="recursosMobile">
+      <div class="row justify-content-evenly">
+        <div class="card col-sm-12 col-md-5">
+          <img src="../imagenes/memotest-infantil.jpg" class="card-img-top" alt="Imagen memotes infantil">
+          <div class="card-body">
+            <h5 class="card-title">Memotest Infantil</h5>
+            <p class="card-text">Memotest Infantil se compone de fichas repetidas que mezcladas se colocan sobre la mesa con la figura hacia abajo formando un cuadro. El interés del juego reside en observar atentamente las fichas que se dan vuelta reteniendo en la memoria el lugar que ocupaban para poder levantarlas cuando se las necesite.</p>
           </div>
         </div>
-      </div>
+        <div class="card col-sm-12 col-md-5">
+          <img src="../imagenes/armando-rompecabezas.jpg" class="card-img-top" alt="Niño armando rompecabezas">
+          <div class="card-body">
+            <h5 class="card-title">Rompecabezas</h5>
+            <p class="card-text">El juego con rompecabezas ofrece una oportunidad excelente de aumentar las habilidades cognitivas y las destrezas de la motricidad fina. Pero también puede ser un momento de desarrollar las habilidades sociales, emocionales y lingüísticas.</p>
+          </div>
+        </div> 
+        <div class="card col-sm-12 col-md-5">
+          <img src="../imagenes/bingo-nino.jpg" class="card-img-top" alt="Niño jugando al bingo">
+          <div class="card-body">
+            <h5 class="card-title">Bingo</h5>
+            <p class="card-text">Este juego permite practicar operaciones con números naturales, operaciones, agilidad en cálculos sencillos a realizar mentalmente. Hay varias modalidades de juego pero todas tienen el mismo objetivo, hacer que los alumnos realicen una serie de cálculos matemáticos.</p>
+          </div>
+        </div>      
+        <div class="card col-sm-12 col-md-5">
+          <img src="../imagenes/secuencia-didactica.jpg" class="card-img-top" alt="Niños haciendo una secuencia didactica con sus nombres">
+          <div class="card-body">
+            <h5 class="card-title">Secuencia didáctica</h5>
+            <p class="card-text">La secuencia didáctica es un conjunto de actividades de aprendizaje interrelacionadas y encadenadas, orientadas a la elaboración de un producto final que responda satisfactoriamente a la práctica social y cultural que le da sentido.</p>
+          </div>
+        </div>            
+      </div>        
     </section>
   </main>
 
@@ -101,7 +140,7 @@
       <li class="footer__lista__item"><a href="https://www.linkedin.com/in/cintia-torres-a6761315a" target="_blank"> <img src="../imagenes/linkedin-icono.png" alt="icono linkedin" class="footer__lista__item__icono"> </a></li>
       <li class="footer__lista__item"><a href="https://www.instagram.com/espacio.alfa/" target="_blank"> <img src="../imagenes/instagram-icono.png" alt="icono instagram" class="footer__lista__item__icono"> </a></li>
       <li class="footer__lista__item"><a href="https://www.facebook.com/Espacio-Alfa-110654965022670" target="_blank"><img src="../imagenes/facebook-icono.png" alt="icono facebook" class="footer__lista__item__icono"> </a></li>
-      <li class="footer__lista__item"><a href="https://api.whatsapp.com/send/?phone=%2B5492213140063&text&app_absent=0" target="_blank"> <img src="../imagenes/whatsapp-icono.png" alt="icono whatsapp" class="footer__lista__item__icono__whatsapp"> </a></li>
+      <li class="footer__lista__item"><a href="https://api.whatsapp.com/send/?phone=%2B5492494208546&text&app_absent=0" target="_blank"> <img src="../imagenes/whatsapp-icono.png" alt="icono whatsapp" class="footer__lista__item__icono__whatsapp"> </a></li>
     </ul>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>

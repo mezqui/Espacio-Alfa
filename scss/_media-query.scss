@@ -74,6 +74,12 @@
       bottom: 0;
     }
   }
+  .recursos{
+    display: none;
+    .card{
+        height: 90%;
+    }
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -112,6 +118,12 @@
       transform: none;
     }
   }
+  .recursosMobile{
+    .card{
+      height: 90%;
+      width: 90%;
+    }
+  }
 }
 @media screen and (min-width: 769px) {
   .navbar {
@@ -130,5 +142,8 @@
     .row {
     width: 65%;
     }
+  }
+  .recursosMobile{
+    display: none;
   }
 }
