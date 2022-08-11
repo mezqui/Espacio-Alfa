@@ -19,6 +19,7 @@
   border: $color-terciario;
   width: fit-content;
   margin: 35px;
+  padding: 10px;
   @include font ($tipografia-text, map-get($bold, "500"), 28px);
 }
 

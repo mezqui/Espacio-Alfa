@@ -75,9 +75,19 @@
     }
   }
   .recursos{
-    display: none;
-    .card{
+    .reverse {
+      flex-direction: row-reverse;
+    }
+    .row{
+      border: solid 2px $color-secundario;
+      margin-bottom: 10px;
+      padding-top: 5px;
+      .img-fluid{
         height: 90%;
+      }
+    }
+    &__parrafo{
+      padding: 0%;
     }
   }
 }
@@ -85,6 +95,18 @@
 @media screen and (max-width: 425px) {
   .logoPagina {
     width: 95%;
+  }
+  .recursos{
+    .row{
+      padding: 10px 0 0 0;
+    }
+    .reverse {
+      flex-direction: column-reverse;
+    }
+    .img-fluid{
+      height: 100%;
+      margin-bottom: 15px;
+    }
   }
   .footer__lista {
     text-align: center;
@@ -118,12 +140,6 @@
       transform: none;
     }
   }
-  .recursosMobile{
-    .card{
-      height: 90%;
-      width: 90%;
-    }
-  }
 }
 @media screen and (min-width: 769px) {
   .navbar {
@@ -143,7 +159,9 @@
     width: 65%;
     }
   }
-  .recursosMobile{
-    display: none;
+  .recursos{
+    .row:hover{
+      border: solid 2px $color-secundario;
+    }
   }
 }

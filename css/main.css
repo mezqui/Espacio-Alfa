@@ -159,35 +159,14 @@ ul {
   border-radius: 8px; }
 
 .recursos {
-  margin: 20px; }
-
-.carousel-item {
-  margin-top: 10px; }
-  .carousel-item img {
-    height: 100vh;
-    opacity: 0.5; }
-
-.carousel-caption {
-  color: #1f2721;
-  margin: 10px; }
-  .carousel-caption p {
-    font-family: "Gentium Plus", serif;
-    font-weight: 100;
-    font-size: 20px; }
-  .carousel-caption h5 {
-    font-family: "Indie Flower", cursive;
-    font-weight: bolder;
-    font-size: 36px; }
-
-.recursosMobile {
-  margin: 10px 0px 30px 0px; }
-  .recursosMobile .row {
-    margin: 0%;
-    justify-content: center; }
-  .recursosMobile .card {
-    margin: 10px; }
-    .recursosMobile .card-img-top {
-      height: 275px; }
+  margin: 15px; }
+  .recursos .row {
+    align-items: center; }
+    .recursos .row .recursos__parrafo {
+      font-family: "Indie Flower", cursive;
+      font-weight: bolder;
+      font-size: 1.3rem;
+      padding: 30px 0 30px 0; }
 
 .mainFormulario {
   text-align: -webkit-center; }
@@ -209,6 +188,7 @@ ul {
   border: #1f2721;
   width: fit-content;
   margin: 35px;
+  padding: 10px;
   font-family: "Indie Flower", cursive;
   font-weight: 500;
   font-size: 28px; }
@@ -344,14 +324,27 @@ ul {
       position: relative;
       right: 0;
       bottom: 0; }
-  .recursos {
-    display: none; }
-    .recursos .card {
-      height: 90%; } }
+  .recursos .reverse {
+    flex-direction: row-reverse; }
+  .recursos .row {
+    border: solid 2px #8a9bff;
+    margin-bottom: 10px;
+    padding-top: 5px; }
+    .recursos .row .img-fluid {
+      height: 90%; }
+  .recursos__parrafo {
+    padding: 0%; } }
 
 @media screen and (max-width: 425px) {
   .logoPagina {
     width: 95%; }
+  .recursos .row {
+    padding: 10px 0 0 0; }
+  .recursos .reverse {
+    flex-direction: column-reverse; }
+  .recursos .img-fluid {
+    height: 100%;
+    margin-bottom: 15px; }
   .footer__lista {
     text-align: center; }
   .encabezado a {
@@ -370,10 +363,7 @@ ul {
     width: 85%; }
   @keyframes iconos {
     0% {
-      transform: none; } }
-  .recursosMobile .card {
-    height: 90%;
-    width: 90%; } }
+      transform: none; } } }
 
 @media screen and (min-width: 769px) {
   .navbar {
@@ -388,5 +378,5 @@ ul {
       padding: 10px; }
   .mainFormulario .row {
     width: 65%; }
-  .recursosMobile {
-    display: none; } }
+  .recursos .row:hover {
+    border: solid 2px #8a9bff; } }
