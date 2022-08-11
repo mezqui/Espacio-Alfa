@@ -75,6 +75,13 @@
     }
   }
   .recursos{
+    &__parrafo{
+      padding: 10px 0 5px 0;
+    }
+    .img-fluid{
+      height: 90%;
+      margin-bottom: 10px;
+    }
     .reverse {
       flex-direction: row-reverse;
     }
@@ -82,12 +89,6 @@
       border: solid 2px $color-secundario;
       margin-bottom: 10px;
       padding-top: 5px;
-      .img-fluid{
-        height: 90%;
-      }
-    }
-    &__parrafo{
-      padding: 0%;
     }
   }
 }

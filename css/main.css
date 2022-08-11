@@ -160,13 +160,13 @@ ul {
 
 .recursos {
   margin: 15px; }
+  .recursos__parrafo {
+    font-family: "Indie Flower", cursive;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    padding: 30px 0 30px 0; }
   .recursos .row {
     align-items: center; }
-    .recursos .row .recursos__parrafo {
-      font-family: "Indie Flower", cursive;
-      font-weight: bolder;
-      font-size: 1.3rem;
-      padding: 30px 0 30px 0; }
 
 .mainFormulario {
   text-align: -webkit-center; }
@@ -324,16 +324,17 @@ ul {
       position: relative;
       right: 0;
       bottom: 0; }
+  .recursos__parrafo {
+    padding: 10px 0 5px 0; }
+  .recursos .img-fluid {
+    height: 90%;
+    margin-bottom: 10px; }
   .recursos .reverse {
     flex-direction: row-reverse; }
   .recursos .row {
     border: solid 2px #8a9bff;
     margin-bottom: 10px;
-    padding-top: 5px; }
-    .recursos .row .img-fluid {
-      height: 90%; }
-  .recursos__parrafo {
-    padding: 0%; } }
+    padding-top: 5px; } }
 
 @media screen and (max-width: 425px) {
   .logoPagina {

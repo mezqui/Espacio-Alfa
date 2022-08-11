@@ -1,10 +1,10 @@
 .recursos {
   margin: 15px;
+  &__parrafo {
+    @include font ($tipografia-text, map-get($bold, "bolder"), 1.3rem);
+    padding: 30px 0 30px 0;
+    }
   .row{
     align-items: center;
-    .recursos__parrafo {
-      @include font ($tipografia-text, map-get($bold, "bolder"), 1.3rem);
-      padding: 30px 0 30px 0;
-      }
   }
 }
